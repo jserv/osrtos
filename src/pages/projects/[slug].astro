@@ -1,0 +1,171 @@
+---
+import {getCollection, getEntry, render} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import ProjectMetadataDisplay from '../../components/ProjectMetadataDisplay.astro';
+import '../../styles/prose.css';
+
+export async function getStaticPaths() {
+  const projects = await getCollection('projects');
+  // Only generate pages for projects with isShow = true
+  const visibleProjects = projects.filter(p => p.data.isShow);
+
+  return visibleProjects.map(entry => ({
+    params: {slug: entry.id},
+    props: {entry},
+  }));
+}
+
+const {entry} = Astro.props;
+const {Content} = await render(entry);
+
+// Get related RTOS
+const rtosEntry = await getEntry('rtos', entry.data.rtos);
+---
+
+<Layout title={`${entry.data.title} - RTOS Showcase`} description={entry.data.summary}>
+  <article class="max-w-full">
+    <div class="breadcrumb mb-8">
+      <a href="/">Home</a> / <a href="/rtos">RTOS</a> /
+      {rtosEntry && <a href={`/rtos/${rtosEntry.data.slug}`}>{rtosEntry.data.title}</a>} /
+      <span>{entry.data.title}</span>
+    </div>
+
+    <h1 class="text-4xl md:text-5xl font-extrabold m-0 mb-8 text-gray-800 dark:text-gray-200">
+      {entry.data.title}
+    </h1>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8 lg:gap-12 mb-16">
+      <div class="min-w-0">
+        <div class="prose mb-8">
+          <p>{entry.data.summary}</p>
+        </div>
+
+        {entry.data.image && (
+           <img src={entry.data.image} alt={entry.data.title} class="project-image"/>
+        )}
+
+        <div class="detailed-content prose">
+          <Content/>
+        </div>
+      </div>
+
+      <aside class="lg:order-0 order-first">
+        <ProjectMetadataDisplay
+           codeUrl={entry.data.codeUrl}
+           siteUrl={entry.data.siteUrl}
+           rtosEntry={rtosEntry}
+        />
+      </aside>
+    </div>
+  </article>
+</Layout>
+
+<style>
+    .breadcrumb {
+        color: #6b7280;
+        font-size: 0.9rem;
+    }
+
+    .breadcrumb a {
+        color: #4f46e5;
+        text-decoration: none;
+    }
+
+    .breadcrumb a:hover {
+        text-decoration: underline;
+    }
+
+    .breadcrumb span {
+        color: #1f2937;
+        font-weight: 500;
+    }
+
+    .summary {
+        background: #f0fdf4;
+        border-left: 4px solid #10b981;
+        padding: 1.5rem;
+        border-radius: 4px;
+    }
+
+    .summary p {
+        margin: 0;
+        font-size: 1.1rem;
+        line-height: 1.7;
+        color: #065f46;
+    }
+
+    .project-image {
+        width: 100%;
+        height: auto;
+        border-radius: 8px;
+        margin-bottom: 2rem;
+        box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    }
+
+    .related-rtos {
+        margin-top: 4rem;
+        padding-top: 3rem;
+        border-top: 2px solid #e5e7eb;
+    }
+
+    .related-rtos h2 {
+        font-size: 1.5rem;
+        font-weight: 700;
+        margin: 0 0 1.5rem 0;
+        color: #1f2937;
+    }
+
+    .rtos-link {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    .rtos-card {
+        background: white;
+        border: 1px solid #e5e7eb;
+        border-radius: 8px;
+        padding: 2rem;
+        transition: all 0.3s ease;
+    }
+
+    .rtos-card:hover {
+        border-color: #4f46e5;
+        box-shadow: 0 4px 12px rgba(79, 70, 229, 0.1);
+        transform: translateY(-2px);
+    }
+
+    .rtos-card h3 {
+        margin: 0 0 0.5rem 0;
+        font-size: 1.5rem;
+        color: #1f2937;
+    }
+
+    .rtos-card p {
+        margin: 0 0 1rem 0;
+        color: #6b7280;
+        line-height: 1.6;
+    }
+
+    .rtos-meta {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+    }
+
+    .stars {
+        font-weight: 600;
+        color: #f59e0b;
+    }
+
+    .arrow {
+        color: #4f46e5;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    @media (max-width: 768px) {
+        .summary p {
+            font-size: 1rem;
+        }
+    }
+</style>

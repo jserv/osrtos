@@ -1,0 +1,33 @@
+---
+title: LVGL
+slug: lvgl
+version: v9.2.2
+codeUrl: https://github.com/lvgl/lvgl
+siteUrl: https://lvgl.io/
+date: '2017-12-25'
+lastUpdated: '2024-12-27'
+star: 17871
+licenses:
+- MIT
+summary: LVGL is the most popular free and open-source embedded graphics library to
+  create beautiful UIs for any MCU, MPU and display type.
+libraryType: gui
+---
+
+### Features
+
+- Powerful building: blocks buttons, charts, lists, sliders, images etc
+- Advanced graphics with animations, anti-aliasing, opacity, smooth scrolling
+- Various input: devices touch pad, mouse, keyboard and external buttons
+- Multi language support with UTF-8 decoding
+- Fully customizable graphical elements
+- Hardware independent to use with any microcontroller or display
+- Scalable to operate with few memory (at least 64-180 kB Flash, and 16-32 kB RAM)
+- OS, External memory and GPU supported but not required
+- Single frame buffer operation even with advances graphical effects
+- Written in C for maximal compatibility
+- PC simulator to develop without embedded hardware
+- Tutorials, examples, themes for rapid development
+- Advanced support and professional GUI development service
+- Documentation and API references online
+- Free and open source under MIT licence

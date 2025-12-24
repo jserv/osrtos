@@ -1,0 +1,20 @@
+---
+import {getCollection} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import RtosList from '../../components/RtosList.astro';
+
+const allRtos = await getCollection('rtos');
+// Sort by stars (descending) by default
+const sortedRtos = allRtos.sort((a, b) => b.data.star - a.data.star);
+---
+
+<Layout title="All Open Source Real-Time Operating Systems"
+        description="Browse open source real-time operating systems">
+  <section class="mb-12 text-center pb-8 border-b border-gray-200 dark:border-gray-700">
+    <h1 class="text-2xl font-extrabold mb-4 m-0 text-gray-800 dark:text-gray-100">
+      Open Source Real-Time Operating Systems
+    </h1>
+  </section>
+
+  <RtosList rtos={sortedRtos} showFilters={true}/>
+</Layout>

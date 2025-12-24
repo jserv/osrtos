@@ -1,0 +1,77 @@
+---
+import {getCollection, render} from 'astro:content';
+import Layout from '../../layouts/Layout.astro';
+import LibraryMetadataDisplay from '../../components/LibraryMetadataDisplay.astro';
+import ProjectsList from '../../components/ProjectsList.astro';
+import '../../styles/prose.css';
+
+export async function getStaticPaths() {
+  const libraries = await getCollection('libraries');
+  return libraries.map(entry => ({
+    params: {slug: entry.data.slug},
+    props: {entry},
+  }));
+}
+
+const {entry} = Astro.props;
+const {Content} = await render(entry);
+
+// Find related projects
+const allProjects = await getCollection('projects');
+const relatedProjects = allProjects.filter(p => p.data.libraries.includes(entry.data.slug));
+---
+
+<Layout title={`${entry.data.title} - Library Showcase`} description={entry.data.summary}>
+  <article class="max-w-full">
+    <div class="flex items-center gap-4 mb-8 flex-wrap">
+      <h1 class="text-4xl md:text-5xl font-extrabold m-0 text-gray-800 dark:text-gray-200">
+        {entry.data.title}
+      </h1>
+      {entry.data.version && (
+         <span
+            class="bg-secondary-100 dark:bg-secondary-900/30 text-secondary-800 dark:text-secondary-400 px-4 py-2 rounded-lg text-sm font-semibold font-mono">
+					{entry.data.version}
+				</span>
+      )}
+    </div>
+
+    <div class="grid grid-cols-1 lg:grid-cols-[1fr_350px] gap-8 lg:gap-12 mb-16">
+      <div class="min-w-0">
+        <div class="prose mb-3">
+          {entry.data.summary}
+        </div>
+
+        {entry.data.image && (
+           <img src={entry.data.image} alt={entry.data.title} class="w-full h-auto rounded-lg mb-8 shadow-md"/>
+        )}
+
+        <div class="prose">
+          <Content/>
+        </div>
+      </div>
+
+      <aside class="lg:order-0 order-first">
+        <LibraryMetadataDisplay
+           star={entry.data.star}
+           lastUpdated={entry.data.lastUpdated}
+           version={entry.data.version}
+           libraryType={entry.data.libraryType}
+           components={entry.data.components}
+           libraries={entry.data.libraries}
+           licenses={entry.data.licenses}
+           codeUrl={entry.data.codeUrl}
+           siteUrl={entry.data.siteUrl}
+        />
+      </aside>
+    </div>
+
+    {relatedProjects.length > 0 && (
+       <section class="mt-16 pt-12 border-t-2 border-gray-200 dark:border-gray-700">
+         <h2 class="text-3xl font-bold m-0 mb-8 text-gray-800 dark:text-gray-100">
+           Related Projects ({relatedProjects.length})
+         </h2>
+         <ProjectsList projects={relatedProjects}/>
+       </section>
+    )}
+  </article>
+</Layout>
