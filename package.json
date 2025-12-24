@@ -1,10 +1,16 @@
 {
-    "name": "frontend",
-    "version": "1.0.0",
-    "description": "",
-    "scripts": {
-      "server": "hugo server",
-      "dev": "NODE_ENV=development ./themes/blowfish/node_modules/.bin/tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit -w",
-      "build": "NODE_ENV=production ./themes/blowfish/node_modules/.bin/tailwindcss -c ./themes/blowfish/tailwind.config.js -i ./themes/blowfish/assets/css/main.css -o ./assets/css/compiled/main.css --jit"
-    }
+  "name": "osrtos",
+  "type": "module",
+  "version": "0.0.1",
+  "scripts": {
+    "dev": "astro dev",
+    "build": "astro build",
+    "preview": "astro preview",
+    "astro": "astro"
+  },
+  "dependencies": {
+    "@tailwindcss/vite": "^4.1.18",
+    "astro": "^5.16.6",
+    "tailwindcss": "^4.1.18"
   }
+}

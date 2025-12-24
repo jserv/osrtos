@@ -1,0 +1,97 @@
+---
+import '../styles/global.css';
+import ThemeToggle from '../components/ThemeToggle.astro';
+
+interface Props {
+  title?: string;
+  description?: string;
+}
+
+const {
+  title = 'OSRTOS - Top Open Source Real-Time Operating Systems (RTOS)',
+  description = 'List of open source real-time operating systems. Dive deep into features, comparisons, and use-cases to choose the perfect real-time operating system for your project. Stay updated with the latest in the RTOS world.'
+} = Astro.props;
+---
+
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width"/>
+  <link rel="icon" type="image/png" href="/favicon.png"/>
+  <meta name="description" content={description}/>
+  <title>{title}</title>
+
+  <!-- Initialize theme before render to prevent flash -->
+  <script is:inline>
+    const theme = (() => {
+      if (typeof localStorage !== 'undefined' && localStorage.getItem('theme')) {
+        return localStorage.getItem('theme');
+      }
+      if (window.matchMedia('(prefers-color-scheme: dark)').matches) {
+        return 'dark';
+      }
+      return 'light';
+    })();
+
+    if (theme === 'dark') {
+      document.documentElement.classList.add('dark');
+    } else {
+      document.documentElement.classList.remove('dark');
+    }
+
+    window.localStorage.setItem('theme', theme);
+  </script>
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-19HMY2DH6K"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-19HMY2DH6K');
+  </script>
+</head>
+<body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
+<header class="bg-gray-800 dark:bg-gray-900 text-white shadow-md sticky top-0 z-50">
+  <nav class="max-w-7xl mx-auto px-6 py-4">
+    <div class="flex justify-between items-center">
+      <div class="nav-brand">
+        <a href="/" class="text-white no-underline text-2xl font-bold hover:text-gray-200 transition-colors">
+          OSRTOS
+        </a>
+      </div>
+      <div class="flex items-center gap-8">
+        <div class="flex gap-8">
+          <a href="/" class="text-white no-underline font-medium hover:text-secondary-400 transition-colors">
+            Home
+          </a>
+          <a href="/rtos/" class="text-white no-underline font-medium hover:text-secondary-400 transition-colors">
+            RTOS
+          </a>
+          <a href="/library/" class="text-white no-underline font-medium hover:text-secondary-400 transition-colors">
+            Libraries
+          </a>
+          <a href="/learn/" class="text-white no-underline font-medium hover:text-secondary-400 transition-colors">
+            Learn
+          </a>
+        </div>
+        <ThemeToggle/>
+      </div>
+    </div>
+  </nav>
+</header>
+
+<main class="flex-1 max-w-7xl mx-auto px-6 py-12">
+  <slot/>
+</main>
+
+<footer class="bg-gray-50 dark:bg-gray-800 border-t border-gray-200 dark:border-gray-700 py-8 mt-16">
+  <div class="max-w-7xl mx-auto px-6">
+    <p class="m-0 text-center text-gray-500 dark:text-gray-400 text-sm">
+      &copy; {new Date().getFullYear()} OSRTOS
+    </p>
+  </div>
+</footer>
+</body>
+</html>

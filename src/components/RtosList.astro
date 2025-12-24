@@ -1,0 +1,149 @@
+---
+import type {CollectionEntry} from 'astro:content';
+import RtosCard from './RtosCard.astro';
+
+interface Props {
+  rtos: CollectionEntry<'rtos'>[];
+  showFilters?: boolean;
+}
+
+const {rtos, showFilters = false} = Astro.props;
+
+// Extract unique licenses and platforms for filters
+const allLicenses = new Set<string>();
+const allPlatforms = new Set<string>();
+
+rtos.forEach(entry => {
+  entry.data.licenses.forEach(license => allLicenses.add(license));
+  entry.data.platforms.forEach(platform => allPlatforms.add(platform));
+});
+
+const licenses = Array.from(allLicenses).sort();
+const platforms = Array.from(allPlatforms).sort();
+---
+
+<div class="w-full">
+  {showFilters && (
+     <div class="mb-6 p-4 bg-gray-50 dark:bg-gray-800 rounded-lg">
+       <div class="flex flex-wrap items-center gap-4">
+         <span class="text-sm font-semibold text-gray-800 dark:text-gray-100">Filters:</span>
+
+         <!-- License Filter -->
+         <div class="flex items-center gap-2">
+           <label class="text-sm font-medium text-gray-700 dark:text-gray-300">
+             License
+           </label>
+           <select
+             id="license-filter"
+             class="px-3 py-1.5 text-sm bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+           >
+             <option value="">All</option>
+             {licenses.map(license => (
+               <option value={license}>{license}</option>
+             ))}
+           </select>
+         </div>
+
+         <!-- Platform Filter -->
+         <div class="flex items-center gap-2">
+           <label class="text-sm font-medium text-gray-700 dark:text-gray-300">
+             Platform
+           </label>
+           <select
+             id="platform-filter"
+             class="px-3 py-1.5 text-sm bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 rounded text-gray-900 dark:text-gray-100 focus:ring-2 focus:ring-blue-500 focus:border-transparent"
+           >
+             <option value="">All</option>
+             {platforms.map(platform => (
+               <option value={platform}>{platform}</option>
+             ))}
+           </select>
+         </div>
+
+         <button
+           id="clear-filters"
+           class="px-3 py-1.5 text-sm bg-gray-200 dark:bg-gray-700 text-gray-700 dark:text-gray-300 rounded hover:bg-gray-300 dark:hover:bg-gray-600 transition-colors"
+         >
+           Clear All
+         </button>
+
+         <p id="rtos-count" class="m-0 ml-auto text-gray-600 dark:text-gray-400 text-sm">Showing {rtos.length} RTOS</p>
+       </div>
+     </div>
+  )}
+
+  <div id="rtos-grid" class="grid grid-cols-1 lg:grid-cols-2 gap-8 mb-8">
+    {rtos.map(entry => (
+       <div
+         class="rtos-item"
+         data-licenses={JSON.stringify(entry.data.licenses)}
+         data-platforms={JSON.stringify(entry.data.platforms)}
+       >
+         <RtosCard entry={entry}/>
+       </div>
+    ))}
+  </div>
+
+  <div id="no-results" class="hidden text-center py-16 px-8 text-gray-600 dark:text-gray-400">
+    <p class="text-lg m-0">No RTOS found matching the selected filters.</p>
+  </div>
+</div>
+
+{showFilters && (
+  <script>
+    function applyFilters() {
+      const licenseFilter = (document.getElementById('license-filter') as HTMLSelectElement)?.value || '';
+      const platformFilter = (document.getElementById('platform-filter') as HTMLSelectElement)?.value || '';
+
+      const rtosItems = document.querySelectorAll('.rtos-item');
+      let visibleCount = 0;
+
+      rtosItems.forEach(item => {
+        const licenses = JSON.parse(item.getAttribute('data-licenses') || '[]');
+        const platforms = JSON.parse(item.getAttribute('data-platforms') || '[]');
+
+        const matchesLicense = !licenseFilter || licenses.includes(licenseFilter);
+        const matchesPlatform = !platformFilter || platforms.includes(platformFilter);
+
+        const isVisible = matchesLicense && matchesPlatform;
+
+        if (isVisible) {
+          (item as HTMLElement).style.display = '';
+          visibleCount++;
+        } else {
+          (item as HTMLElement).style.display = 'none';
+        }
+      });
+
+      // Update count
+      const countElement = document.getElementById('rtos-count');
+      if (countElement) {
+        countElement.textContent = `Showing ${visibleCount} RTOS`;
+      }
+
+      // Show/hide no results message
+      const noResults = document.getElementById('no-results');
+      if (noResults) {
+        if (visibleCount === 0) {
+          noResults.classList.remove('hidden');
+        } else {
+          noResults.classList.add('hidden');
+        }
+      }
+    }
+
+    // Attach event listeners
+    const licenseFilter = document.getElementById('license-filter');
+    const platformFilter = document.getElementById('platform-filter');
+    const clearButton = document.getElementById('clear-filters');
+
+    licenseFilter?.addEventListener('change', applyFilters);
+    platformFilter?.addEventListener('change', applyFilters);
+
+    clearButton?.addEventListener('click', () => {
+      (document.getElementById('license-filter') as HTMLSelectElement).value = '';
+      (document.getElementById('platform-filter') as HTMLSelectElement).value = '';
+      applyFilters();
+    });
+  </script>
+)}
