@@ -2,7 +2,7 @@ name: Deploy
 
 on:
   push:
-    branches: [ main, astro ]
+    branches: [ master, astro ]
 
 jobs:
   build-and-deploy:
