@@ -6,7 +6,7 @@ codeUrl: https://github.com/jameswalmsley/bitthunder
 siteUrl: http://bitthunder.org/
 date: '2016-11-29'
 lastUpdated: '2017-01-25'
-star: 170
+star: 172
 components: []
 libraries: []
 licenses:

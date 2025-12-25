@@ -6,7 +6,7 @@ codeUrl: https://github.com/contiki-os/contiki
 siteUrl: http://www.contiki-os.org/
 date: '2016-11-29'
 lastUpdated: '2018-11-03'
-star: 3730
+star: 3787
 components:
 - FileSystem
 - Network

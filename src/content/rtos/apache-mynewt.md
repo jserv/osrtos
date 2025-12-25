@@ -5,8 +5,8 @@ version: pre_sterly_refactor
 codeUrl: https://github.com/apache/mynewt-core
 siteUrl: https://mynewt.apache.org/
 date: '2016-11-29'
-lastUpdated: '2024-12-20'
-star: 838
+lastUpdated: '2025-12-19'
+star: 873
 components:
 - BLE
 - LoRaWAN

@@ -6,7 +6,7 @@ codeUrl: https://github.com/apexrtos/apex
 siteUrl: https://github.com/apexrtos/apex
 date: '2023-08-20'
 lastUpdated: '2022-05-30'
-star: 30
+star: 34
 components:
 - FileSystem
 - Shell

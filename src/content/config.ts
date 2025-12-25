@@ -13,9 +13,7 @@ const rtos = defineCollection({
     lastUpdated: z.coerce.date(),
     star: z.number().default(0),
     version: z.string().optional(),
-    date: z.coerce.date().optional(),
     components: z.array(z.string()).default([]),
-    libraries: z.array(z.string()).default([]),
     licenses: z.array(z.string()).default([]),
     platforms: z.array(z.string()).default([]),
   }),
@@ -28,19 +26,22 @@ const libraries = defineCollection({
     slug: z.string(),
     summary: z.string(),
     libraryType: z.enum([
-      'gui',          // Graphical User Interface
-      'filesystem',   // File Systems
-      'networking',   // Network Stacks (TCP/IP)
-      'wireless',     // Wireless Communication (Bluetooth, WiFi, LoRa, etc.)
-      'storage',      // Flash/Storage Management
-      'machine-learning',        // Machine Learning & AI
-      'language',     // Programming Languages & Interpreters
-      'hal',          // Hardware Abstraction Layer
-      'middleware',   // Middleware & Frameworks
-      'crypto',       // Cryptography & Security
-      'sensor',       // Sensor Libraries
-      'protocol',     // Communication Protocols (I2C, SPI, UART, etc.)
-      'utils',        // Utilities & Helpers
+      'GUI',          // Graphical User Interface
+      'FileSystem',   // File Systems
+      'Database',     // Embedded Databases
+      'Network',      // Network Stacks (TCP/IP)
+      'Wireless',     // Wireless Communication (Bluetooth, WiFi, LoRa, etc.)
+      'MachineLearning',  // Machine Learning & AI
+      'Audio',        // Audio Processing & Codecs
+      'Video',        // Video Processing & Codecs
+      'Graphics',     // 2D/3D Graphics Libraries
+      'Language',     // Programming Languages & Interpreters
+      'HAL',          // Hardware Abstraction Layer
+      'Middleware',   // Middleware & Frameworks
+      'Bootloader',   // Bootloaders & Boot Management
+      'Cryptography', // Cryptography & Security
+      'Testing',      // Testing & Debugging Tools
+      'Tracing',      // Tracing & Profiling
     ]),
     codeUrl: z.string().url().optional(),
     siteUrl: z.string().url().optional(),
@@ -48,9 +49,6 @@ const libraries = defineCollection({
     lastUpdated: z.coerce.date(),
     star: z.number().default(0),
     version: z.string().optional(),
-    date: z.coerce.date().optional(),
-    components: z.array(z.string()).default([]),
-    libraries: z.array(z.string()).default([]),
     licenses: z.array(z.string()).default([]),
   }),
 });
@@ -66,6 +64,7 @@ const projects = defineCollection({
     isShow: z.boolean().default(false),
     rtos: z.string(), // Reference to RTOS slug
     libraries: z.array(z.string()).default([]), // References to library slugs
+    topics: z.array(z.string()).default([]), // GitHub topics (metadata only)
   }),
 });
 

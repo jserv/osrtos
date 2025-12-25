@@ -6,7 +6,7 @@ codeUrl: https://github.com/alibaba/AliOS-Things
 siteUrl: http://aliosthings.io/
 date: '2018-01-23'
 lastUpdated: '2023-07-04'
-star: 4596
+star: 4625
 components: []
 libraries: []
 licenses:

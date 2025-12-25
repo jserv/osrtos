@@ -6,7 +6,7 @@ codeUrl: https://github.com/ianhom/MOE
 siteUrl: https://github.com/ianhom/MOE
 date: '2018-03-20'
 lastUpdated: '2019-12-08'
-star: 66
+star: 69
 components: []
 libraries: []
 licenses:

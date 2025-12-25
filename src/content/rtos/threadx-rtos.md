@@ -1,12 +1,12 @@
 ---
 title: Eclipse ThreadX
 slug: threadx-rtos
-version: v6.4.1_rel
+version: v6.4.3.202503_rel
 codeUrl: https://github.com/eclipse-threadx/threadx
 siteUrl: hhttps://threadx.io/ttps://azure.microsoft.com/en-us/services/rtos/
 date: '2020-05-27'
-lastUpdated: '2024-03-26'
-star: 2989
+lastUpdated: '2025-09-28'
+star: 3327
 components:
 - FileSystem
 - Network

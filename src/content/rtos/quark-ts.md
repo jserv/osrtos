@@ -5,8 +5,8 @@ version: 7.3.3
 codeUrl: https://github.com/kmilo17pet/QuarkTS
 siteUrl: https://github.com/kmilo17pet/QuarkTS/wiki
 date: '2019-02-27'
-lastUpdated: '2024-10-28'
-star: 311
+lastUpdated: '2025-10-27'
+star: 340
 components: []
 libraries: []
 licenses:

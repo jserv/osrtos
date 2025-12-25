@@ -6,7 +6,7 @@ codeUrl: https://github.com/develersrl/bertos
 siteUrl: http://www.bertos.org/
 date: '2016-11-29'
 lastUpdated: '2018-08-09'
-star: 121
+star: 124
 components: []
 libraries: []
 licenses:

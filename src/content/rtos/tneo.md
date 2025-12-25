@@ -6,7 +6,7 @@ codeUrl: https://github.com/dimonomid/tneo
 siteUrl: https://dmitryfrank.com/projects/tneo
 date: '2016-12-20'
 lastUpdated: '2024-12-28'
-star: 233
+star: 245
 components: []
 libraries: []
 licenses:

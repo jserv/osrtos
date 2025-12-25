@@ -1,12 +1,12 @@
 ---
 title: qpc
 slug: qpc
-version: v8.0.1
+version: v8.1.1
 codeUrl: https://github.com/QuantumLeaps/qpc
 siteUrl: https://www.state-machine.com/products/qp
 date: '2024-12-30'
-lastUpdated: '2024-12-17'
-star: 1014
+lastUpdated: '2025-12-16'
+star: 1199
 components:
 - Active Objects
 licenses:

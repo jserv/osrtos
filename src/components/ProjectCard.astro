@@ -9,7 +9,7 @@ const {entry} = Astro.props;
 const {title, summary, isShow, rtos, image, codeUrl, siteUrl} = entry.data;
 
 // Only show link if isShow is true
-const href = isShow ? `/projects/${entry.id}` : (siteUrl ? siteUrl : codeUrl);
+const href = isShow ? `/projects/${entry.id}/` : (siteUrl ? siteUrl : codeUrl);
 ---
 
 <article

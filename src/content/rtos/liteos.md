@@ -6,7 +6,7 @@ codeUrl: https://github.com/LITEOS/LiteOS_Kernel
 siteUrl: https://www.huawei.com/minisite/liteos/en/index.html
 date: '2018-02-06'
 lastUpdated: '2020-12-30'
-star: 4837
+star: 4913
 components: []
 libraries: []
 licenses:

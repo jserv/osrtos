@@ -6,7 +6,7 @@ codeUrl: https://github.com/ARM-software/CMSIS_5
 siteUrl: https://github.com/ARM-software/CMSIS_5
 date: '2023-08-20'
 lastUpdated: '2024-09-03'
-star: 1367
+star: 1549
 components: []
 libraries: []
 licenses:

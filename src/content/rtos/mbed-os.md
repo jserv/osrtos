@@ -1,40 +1,123 @@
 ---
 title: mbed OS
 slug: mbed-os
-version: mbed-os-6.17.0
+summary: Arm Mbed OS is an open-source real-time operating system specifically designed
+  for IoT applications on Arm Cortex-M microcontrollers. It provides a comprehensive
+  platform integrating a deterministic RTOS kernel, multi-layered security foundations,
+  and extensive connectivity stacks for wireless and wired networking.
 codeUrl: https://github.com/ARMmbed/mbed-os
 siteUrl: https://www.mbed.com/
-date: '2016-11-29'
+star: 4809
+version: mbed-os-6.17.0
 lastUpdated: '2024-10-08'
-star: 4700
 components:
-- BLE
-- LoRaWAN
-- FileSystem
 - Network
-- 6LoWPAN
-- AT Commands
+- Wireless
+- Cryptography
+- FileSystem
+- Storage
+- IPv6
+- TCP
+- UDP
 - TLS/SSL
-- Runtime Analysis
-- USBHost
+- DTLS
+- DNS
+- DHCP
+- CoAP
+- WiFi
+- Bluetooth
+- BLE
+- LoRa
+- LoRaWAN
+- Cellular
+- LTE-M
+- NB-IoT
 - USBDevice
-libraries:
-- lwIP
-licenses:
-- Apache License
+- CAN
+- Shell
+- Profiling
+- OTA
+- SecureBoot
+- TrustZone
+- PKI
+- MemoryEncryption
+- 6LoWPAN
+- Thread
 platforms:
 - ARM
-summary: mbed OS is an open-source embedded operating system designed specifically
-  for the "things" in the Internet of Things (IoT). It includes all the features you
-  need to develop a connected product based on an ARM Cortex-M microcontroller.
+- ARM Cortex-M
+licenses:
+- Apache-2.0
+libraries:
+- Keil RTX
+- Mbed TLS
+- Nanostack
+- lwIP
+- Cordio
+- LittleFS
 ---
 
 ### Features
 
-- Device and component support. With support for mbed OS on a wide range of ARM Cortex-M based devices, developers can prototype IoT applications quickly on low-cost development boards.Simple USB drag and drop programming allows you to rapidly prototype without the need for expensive debug hardware.
-- Real Time Software Execution. With an RTOS core based on the widely used open-source CMSIS-RTOS RTX, mbed OS supports deterministic, multithreaded real time sofware execution. The RTOS primatives are always available, allowing drivers and applications to rely on features such as threads, semaphores and mutexes.
-- Open Source. Released under an Apache 2.0 licence, you can use mbed OS in commercial and personal projects with confidence.
-- Ease of Use. With a modular libary structure, the necessary underlying support for your application will be automatically included on your device.
-- Community. The mbed community allows contribution and collaboration between ARM, over 50 partners, and hundreds of thousands of individual developers all over the world.
-- End to End Security. We address security in device hardware, software, communication and in the lifecycle of the device itself: Hardware Enforced Security At the lowest level of mbed OS, we use a supervisory kernel called uVisor to create isolated security domains which restrict access to memory and peripherals. Communications Security We take SSL and TLS, the standard protocols for securing communications on the internet, and allow you to include them in your mbed project with a simple API.
-- Drivers and support libraries. Driver support for a wide range of standard MCU peripherals is included in mbed OS. This includes digital and analog IO, interrupts, port and bus IO, PWM, I2C, SPI and serial.
+
+- Deterministic multithreaded execution via the integrated Keil RTX kernel.
+
+- Dual-profile support including a Full Profile for RTOS features and a Bare Metal Profile for constrained devices.
+
+- Native integration of Mbed TLS and Mbed Crypto for secure communication and storage.
+
+- Comprehensive connectivity support including Wi-Fi, Bluetooth Low Energy (BLE), LoRaWAN, and Cellular (LTE-M, NB-IoT).
+
+- Support for Wi-SUN mesh networking via the integrated Nanostack.
+
+- Standardized C++ API for peripheral access including GPIO, ADC, I2C, SPI, PWM, and CAN.
+
+- Built-in storage management with support for FAT and LittleFS file systems.
+
+- Cloud management services integration for device provisioning and updates.
+
+- Advanced power management features including tickless sleep and automated sleep/deep-sleep transitions.
+
+- Support for Arm TrustZone for hardware-enforced security isolation.
+
+- Integrated bootloader support and Over-the-Air (OTA) update capabilities.
+
+- Extensive hardware abstraction layer (HAL) for porting across diverse Cortex-M vendors.
+
+- Built-in error handling with overridable weak symbols for production-ready failure management.
+
+- Support for multiple toolchains including Arm Compiler 6, GCC ARM, and IAR.
+
+- Comprehensive testing framework (Greentea) and unit testing support.
+
+
+
+### Architecture
+
+Arm Mbed OS follows a layered architectural design optimized for Arm Cortex-M microcontrollers. At its core, the **Full Profile** utilizes the Keil RTX kernel, a deterministic real-time operating system that provides multithreading, semaphores, mutexes, and other RTOS primitives. For highly constrained devices, Mbed OS offers a **Bare Metal Profile** which excludes the RTX kernel to minimize memory footprint, focusing on a single-threaded event-loop model. 
+
+The architecture is structured into several distinct layers: the Hardware Abstraction Layer (HAL) provides a consistent interface to vendor-specific peripherals; the Core OS layer manages the RTOS kernel and system services; the Middleware layer includes comprehensive stacks for connectivity (IP, BLE, LoRaWAN, Wi-SUN) and security (Mbed TLS); and the Application API layer provides a standardized C++ interface for developers. This modularity allows developers to include only the components necessary for their specific application, optimizing for both performance and power consumption.
+
+#### Core Components
+- **RTOS Kernel**: Based on CMSIS-RTOS2 (Keil RTX) for thread management and synchronization.
+- **Connectivity Stacks**: Native support for IPv4/IPv6, WiFi, Bluetooth Low Energy, LoRaWAN, and Cellular.
+- **Security Foundations**: Integrated Mbed TLS for cryptography and secure communication, with support for Arm TrustZone.
+- **Storage & FileSystems**: Support for LittleFS (optimized for wear leveling) and FATFileSystem.
+- **Power Management**: Automated sleep management and tickless RTOS mode to maximize battery life.
+
+### Use Cases
+
+This RTOS is ideal for:
+
+- **Smart Street Lighting**: Managing city-wide lighting platforms with industry-standard control nodes and NEMA socket integration.
+- **Smart City Bike Lights**: Utilizing accelerometers and low-power wireless to monitor road conditions and cyclist safety.
+- **Industrial Asset Monitoring**: Deploying multi-sensor devices for air quality, motion, and cellular-based remote monitoring.
+- **Agricultural IoT**: Implementing LoRaWAN-based sensor networks for long-range, low-power soil and climate monitoring.
+- **Smart Home Appliances**: Providing secure, Wi-Fi connected interfaces for domestic devices and energy management systems.
+- **Wearable Health Monitors**: Leveraging BLE and advanced power management for long-lasting, secure medical telemetry.
+
+### Getting Started
+
+Developers can begin by choosing between three primary development environments: **Keil Studio Cloud** for a zero-installation web-based IDE, **Mbed Studio** for a dedicated desktop experience with integrated debugging, or **Mbed CLI** for command-line flexibility and automation. The official documentation at [os.mbed.com/docs](https://os.mbed.com/docs) provides comprehensive Doxygen-generated API references, step-by-step tutorials, and detailed porting guides for custom hardware. 
+
+Note: Arm has announced an End of Life (EOL) timeline for Mbed OS, with the project and its associated websites scheduled for archiving in July 2026. Developers starting new projects should consider the long-term maintenance implications and review the official announcement on the Mbed blog.

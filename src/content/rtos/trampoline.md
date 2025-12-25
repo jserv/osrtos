@@ -5,8 +5,8 @@ version: dev-master
 codeUrl: https://github.com/TrampolineRTOS/trampoline
 siteUrl: https://github.com/TrampolineRTOS/trampoline
 date: '2017-06-11'
-lastUpdated: '2024-03-20'
-star: 643
+lastUpdated: '2025-09-12'
+star: 713
 components: []
 libraries: []
 licenses:

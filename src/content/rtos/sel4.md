@@ -1,12 +1,12 @@
 ---
 title: seL4
 slug: sel4
-version: 13.0.0
+version: 14.0.0
 codeUrl: https://github.com/seL4/seL4
 siteUrl: http://sel4.systems/
 date: '2017-04-29'
-lastUpdated: '2024-12-19'
-star: 4795
+lastUpdated: '2025-12-14'
+star: 5226
 components: []
 libraries: []
 licenses:

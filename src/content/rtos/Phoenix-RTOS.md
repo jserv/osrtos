@@ -1,12 +1,12 @@
 ---
 title: Phoenix-RTOS
 slug: Phoenix-RTOS
-version: dev
+version: v3.3.2
 codeUrl: https://github.com/phoenix-rtos/phoenix-rtos-kernel
 siteUrl: http://phoenix-rtos.com/
 date: '2019-02-12'
-lastUpdated: '2024-12-11'
-star: 120
+lastUpdated: '2025-12-10'
+star: 154
 components:
 - FileSystem
 - Network

@@ -6,7 +6,7 @@ codeUrl: https://github.com/DuinOS/DuinOS
 siteUrl: https://github.com/DuinOS/DuinOS
 date: '2016-11-29'
 lastUpdated: '2020-07-10'
-star: 72
+star: 74
 components: []
 libraries: []
 licenses:

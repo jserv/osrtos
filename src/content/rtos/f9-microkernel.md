@@ -6,7 +6,7 @@ codeUrl: https://github.com/f9micro/f9-kernel
 siteUrl: https://github.com/f9micro/f9-kernel
 date: '2016-11-30'
 lastUpdated: '2020-01-01'
-star: 684
+star: 708
 components: []
 libraries: []
 licenses:

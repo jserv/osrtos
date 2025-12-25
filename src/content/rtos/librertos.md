@@ -5,8 +5,8 @@ version: dev-master
 codeUrl: https://github.com/djboni/librertos
 siteUrl: https://github.com/djboni/librertos
 date: '2016-12-30'
-lastUpdated: '2023-12-01'
-star: 40
+lastUpdated: '2023-11-30'
+star: 42
 components: []
 libraries: []
 licenses:

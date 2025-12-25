@@ -4,7 +4,6 @@ interface Props {
   lastUpdated: Date;
   version?: string;
   components: string[];
-  libraries: string[];
   licenses: string[];
   platforms: string[];
   codeUrl?: string;
@@ -16,7 +15,6 @@ const {
   lastUpdated,
   version,
   components,
-  libraries,
   licenses,
   platforms,
   codeUrl,
@@ -114,16 +112,4 @@ const {
      </div>
   )}
 
-  {libraries.length > 0 && libraries[0] !== 'None' && (
-     <div class="mb-6">
-       <h3
-          class="m-0 mb-4 text-base font-semibold text-gray-700 dark:text-gray-300 border-b-2 border-gray-200 dark:border-gray-600 pb-2">
-         Libraries</h3>
-       <ul class="list-none p-0 m-0 flex flex-wrap gap-2">
-         {libraries.map(l =>
-            <li
-               class="bg-primary-100 dark:bg-primary-900/30 text-primary-800 dark:text-primary-300 px-3 py-1.5 rounded-md text-xs font-medium">{l}</li>)}
-       </ul>
-     </div>
-  )}
 </aside>

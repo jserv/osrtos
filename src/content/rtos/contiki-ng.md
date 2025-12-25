@@ -1,12 +1,12 @@
 ---
 title: Contiki-NG
 slug: contiki-ng
-version: release/v4.9
+version: release/v5.1
 codeUrl: https://github.com/contiki-ng/contiki-ng
 siteUrl: https://github.com/contiki-ng/contiki-ng
 date: '2020-05-22'
-lastUpdated: '2024-11-20'
-star: 1341
+lastUpdated: '2025-12-04'
+star: 1466
 components:
 - FileSystem
 - Network

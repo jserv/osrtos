@@ -5,8 +5,8 @@ version: release_tinyos_2_1_2
 codeUrl: https://github.com/tinyos/tinyos-main
 siteUrl: http://webs.cs.berkeley.edu/tos/
 date: '2019-02-12'
-lastUpdated: '2021-04-22'
-star: 1420
+lastUpdated: '2025-10-30'
+star: 1477
 components: []
 libraries: []
 licenses:

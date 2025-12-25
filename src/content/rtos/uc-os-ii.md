@@ -6,7 +6,7 @@ codeUrl: https://github.com/SiliconLabs/uC-OS2
 siteUrl: https://doc.micrium.com/display/ucos/
 date: '2020-05-04'
 lastUpdated: '2023-01-05'
-star: 580
+star: 684
 components:
 - FileSystem
 - Network
