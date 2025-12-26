@@ -1,9 +1,8 @@
 ---
 title: AsyncUDP_RP2040W
-summary: A fully asynchronous UDP library designed for the Raspberry Pi Pico W using
-  the CYW43439 WiFi chip. It enables non-blocking unicast, broadcast, and multicast
-  communication, allowing developers to handle multiple simultaneous connections without
-  stalling the main execution loop.
+summary: A fully asynchronous UDP library for the Raspberry Pi Pico W using the CYW43439
+  WiFi chip. It supports unicast, broadcast, and multicast communication, allowing
+  for non-blocking network operations on the arduino-pico core.
 codeUrl: https://github.com/khoih-prog/AsyncUDP_RP2040W
 siteUrl: https://github.com/khoih-prog/AsyncUDP_RP2040W
 isShow: false
@@ -32,26 +31,26 @@ topics:
 - unicast
 ---
 
-The Raspberry Pi Pico W has become a staple for IoT developers, but efficient networking often requires moving beyond standard blocking libraries. The **AsyncUDP_RP2040W** library brings the powerful asynchronous networking capabilities originally found in the ESP32 ecosystem to the RP2040 platform. By leveraging the `arduino-pico` core, this library allows for high-performance UDP communication that doesn't require the processor to wait for packets in a tight loop.
+The Raspberry Pi Pico W has become a staple in the hobbyist and professional embedded world thanks to its powerful RP2040 microcontroller and integrated CYW43439 WiFi module. However, standard synchronous networking libraries can often become a bottleneck, forcing the CPU to wait for packet arrivals or transmission completions. The **AsyncUDP_RP2040W** library changes this dynamic by providing a fully asynchronous UDP implementation specifically for the Pico W.
 
-### Why Asynchronous UDP Matters
-In traditional synchronous networking, your code must frequently poll the hardware to check if a packet has arrived. If your application is busy performing sensor calculations or driving a display, you might miss packets or introduce significant latency. 
+### Why Go Asynchronous?
+Traditional UDP libraries often require developers to poll for new packets in a tight `loop()`. This "blocking" or "polling" nature can lead to latency and makes it difficult to manage multiple simultaneous connections. AsyncUDP_RP2040W, based on the popular ESPAsyncUDP architecture, operates on an event-driven model. Instead of waiting for data, you define callback functions that are triggered automatically when a packet arrives.
 
-AsyncUDP changes this paradigm. It is event-driven; you define a callback function that is triggered automatically when data arrives. This means your main `loop()` remains free to handle other tasks, and the network stack handles the heavy lifting in the background. This architecture is particularly beneficial for multi-connection environments where a device might be acting as both a client and a server simultaneously.
+This approach offers several advantages:
+- **Concurrency**: Handle multiple connections simultaneously without complex state machines.
+- **Responsiveness**: The system remains ready to process other tasks while the network stack handles packet transmission in the background.
+- **Speed**: By leveraging the underlying lwIP stack more directly, it achieves significantly higher throughput compared to synchronous alternatives.
 
 ### Key Features and Capabilities
-- **Full Asynchronous Support**: Handle multiple connections at once without blocking execution.
-- **Versatile Communication**: Built-in support for Unicast, Broadcast, and Multicast environments.
-- **Speed**: By operating asynchronously, the library maximizes the throughput of the CYW43439 WiFi chip.
-- **Ease of Use**: Despite its technical complexity, the API is designed to be intuitive, using modern C++ lambda functions for packet handling.
-
-### Technical Architecture
-This library is a port and modification of Hristo Gochkov's well-known `ESPAsyncUDP` and Khoi Hoang's `AsyncUDP_STM32`. It is specifically optimized for the **Raspberry Pi Pico W** using the [arduino-pico core](https://github.com/earlephilhower/arduino-pico). Because it relies on the underlying lwIP stack, it provides a robust foundation for complex networking tasks like NTP synchronization or real-time data streaming.
+The library is designed to be a "drop-in" enhancement for developers using the [arduino-pico core](https://github.com/earlephilhower/arduino-pico). It supports:
+- **Unicast, Broadcast, and Multicast**: Whether you are building a simple point-to-point sensor or a discovery service, the library has you covered.
+- **Event-Driven API**: Simple methods like `onPacket()` allow you to attach lambdas or function pointers to handle incoming data.
+- **Multi-connection Support**: Designed for a trouble-free environment where multiple network events might happen at once.
 
 ### Getting Started
-To use the library, you must include the header in your main project file. A unique aspect of this library's implementation is its approach to avoiding linker errors in multi-file projects. You should include `AsyncUDP_RP2040W.h` in only one file (usually your main `.ino`), while using `AsyncUDP_RP2040W.hpp` in any other files that need access to the library classes.
+To use the library, you'll need a Raspberry Pi Pico W and the Earle Philhower arduino-pico core (v2.4.0+). Installation is straightforward via the Arduino Library Manager or PlatformIO.
 
-Here is a basic example of setting up an asynchronous UDP server:
+Here is a basic example of how to set up an asynchronous UDP server:
 
 ```cpp
 #include <WiFi.h>
@@ -63,26 +62,28 @@ void setup() {
   Serial.begin(115200);
   WiFi.begin("your_ssid", "your_password");
 
-  if(udp.listen(1234)) {
+  if (udp.listen(1234)) {
     Serial.println("UDP Listening on port 1234");
     udp.onPacket([](AsyncUDPPacket packet) {
-      Serial.print("Data received: ");
+      Serial.print("UDP Packet Type: ");
+      Serial.print(packet.isBroadcast() ? "Broadcast" : "Unicast");
+      Serial.print(", Data: ");
       Serial.write(packet.data(), packet.length());
       Serial.println();
-      
+
       // Reply to the sender
-      packet.print("ACK");
+      packet.printf("Got %u bytes", packet.length());
     });
   }
 }
 
 void loop() {
-  // Your main code runs here without needing to check for UDP packets manually
+  // No need to check for packets here!
 }
 ```
 
-### Advanced Usage: NTP and Multicast
-The library includes comprehensive examples for real-world scenarios. The `AsyncUdpNTPClient` example demonstrates how to fetch time from global NTP servers and process the 48-byte response packet asynchronously. For developers working on discovery protocols or smart home integration, the `AsyncUDPMulticastServer` shows how to join multicast groups and handle traffic efficiently.
+### Avoiding Linker Errors
+One unique aspect of this library is its implementation style. To avoid "Multiple Definitions" linker errors in multi-file projects, the author provides two header files. `AsyncUDP_RP2040W.hpp` can be included in multiple files, while `AsyncUDP_RP2040W.h` should be included only once (typically in your main `.ino` or `setup()` file). This ensures the implementation code is only compiled into one translation unit.
 
-### Debugging and Optimization
-For developers who need to peek under the hood, the library includes a configurable logging system. By adjusting the `_AUDP_RP2040W_LOGLEVEL_` define, you can increase the verbosity of the debug output to the Serial monitor, which is invaluable for troubleshooting complex network routing or packet loss issues.
+### Conclusion
+For developers looking to push the networking capabilities of the Raspberry Pi Pico W, AsyncUDP_RP2040W is an essential tool. It brings the high-performance, non-blocking networking patterns familiar to ESP32 developers to the RP2040 ecosystem, enabling more complex and responsive IoT applications.

@@ -6,7 +6,7 @@ summary: A comprehensive support repository for the Lemon IoT LTE nRF9160 board,
 codeUrl: https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nRF9160
 siteUrl: https://lemon-iot.com/index.php/product/lemon-iot-lte-cat-m1-nb-iot-nrf9160-board/
 isShow: true
-image: /images/lemon_iot_lte_nrf9160_diagram.webp
+image: /images/202512/lemon_iot_lte_nrf9160_diagram.webp
 rtos: zephyr
 libraries: []
 topics:

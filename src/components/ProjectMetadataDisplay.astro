@@ -5,12 +5,14 @@ interface Props {
   codeUrl?: string;
   siteUrl?: string;
   rtosEntry?: CollectionEntry<'rtos'>;
+  libraryEntries?: CollectionEntry<'libraries'>[];
 }
 
 const {
   codeUrl,
   siteUrl,
-  rtosEntry
+  rtosEntry,
+  libraryEntries = []
 } = Astro.props;
 ---
 
@@ -44,7 +46,7 @@ const {
   </div>
 
   {rtosEntry && (
-     <div class="mb-0">
+     <div class="mb-6">
        <h3
           class="m-0 mb-4 text-base font-semibold text-gray-700 dark:text-gray-300 border-b-2 border-gray-200 dark:border-gray-600 pb-2">
          Built With
@@ -82,6 +84,59 @@ const {
            </svg>
          </div>
        </a>
+     </div>
+  )}
+
+  {libraryEntries.length > 0 && (
+     <div>
+       <h3
+          class="m-0 mb-4 text-base font-semibold text-gray-700 dark:text-gray-300 border-b-2 border-gray-200 dark:border-gray-600 pb-2">
+         Libraries Used
+       </h3>
+       <div class="flex flex-col gap-3">
+         {libraryEntries.map(lib => (
+            <a href={`/library/${lib.data.slug}/`}
+               class="block bg-white dark:bg-gray-700 border border-gray-300 dark:border-gray-600 hover:border-primary-500 dark:hover:border-primary-500 rounded-lg p-4 no-underline transition-all hover:shadow-md group">
+              <div class="flex items-start justify-between gap-2 mb-2">
+                <h4
+                   class="text-base font-bold text-gray-900 dark:text-gray-100 m-0 group-hover:text-primary-600 dark:group-hover:text-primary-400 transition-colors">
+                  {lib.data.title}
+                </h4>
+                <span class="text-warning-500 text-xs font-semibold whitespace-nowrap">
+             ⭐ {lib.data.star.toLocaleString()}
+           </span>
+              </div>
+              <p class="text-sm text-gray-600 dark:text-gray-400 m-0 mb-3 line-clamp-2">
+                {lib.data.summary}
+              </p>
+              {lib.data.version && (
+                 <div class="flex items-center gap-2 mb-2">
+                   <span class="text-xs text-gray-500 dark:text-gray-400">Version:</span>
+                   <code
+                      class="bg-gray-200 dark:bg-gray-600 px-2 py-0.5 rounded text-xs font-mono text-gray-700 dark:text-gray-300">
+                     {lib.data.version}
+                   </code>
+                 </div>
+              )}
+              <div class="flex items-center gap-2 mb-2">
+                <span class="text-xs text-gray-500 dark:text-gray-400">Library Type:</span>
+                <span
+                   class="bg-gray-200 dark:bg-gray-600 px-2 py-0.5 rounded text-xs font-mono text-gray-700 dark:text-gray-300">
+                  {lib.data.libraryType.replace(/-/g, ' ')}
+                </span>
+              </div>
+              <div class="flex items-center justify-between mt-3 pt-3 border-t border-gray-200 dark:border-gray-600">
+                <span class="text-xs text-gray-500 dark:text-gray-400">
+                  View Library Details
+                </span>
+                <svg class="w-4 h-4 text-primary-500 group-hover:translate-x-1 transition-transform" fill="none"
+                     stroke="currentColor" viewBox="0 0 24 24">
+                  <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M9 5l7 7-7 7"/>
+                </svg>
+              </div>
+            </a>
+         ))}
+       </div>
      </div>
   )}
 </aside>
