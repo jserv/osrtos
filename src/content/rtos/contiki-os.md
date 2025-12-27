@@ -1,42 +1,96 @@
 ---
 title: Contiki OS
 slug: contiki-os
-version: '3.0'
+summary: Contiki is a lightweight, open-source operating system designed for resource-constrained
+  microcontrollers in the Internet of Things (IoT). It features a modular, event-driven
+  architecture that supports standardized low-power wireless communication protocols
+  while maintaining an extremely small memory footprint.
 codeUrl: https://github.com/contiki-os/contiki
 siteUrl: http://www.contiki-os.org/
-date: '2016-11-29'
-lastUpdated: '2018-11-03'
 star: 3787
+version: '3.0'
+lastUpdated: '2018-11-03'
 components:
-- FileSystem
 - Network
+- Wireless
+- IPv6
+- TCP
+- UDP
 - 6LoWPAN
-- Command Line Interface
-libraries: []
-licenses:
-- BSD
+- CoAP
+- FileSystem
+- Shell
+- Profiling
+- Simulator
+- Cryptography
 platforms:
-- MSP430
 - ARM
+- MSP430
 - AVR
-- '8051'
-summary: Contiki is an open source operating system for the Internet of Things. Contiki
-  connects tiny low-cost, low-power microcontrollers to the Internet.
+- x86
+- POSIX
+- Native
+- Simulator
+licenses:
+- BSD 3-Clause
+libraries:
+- uIP
+- Rime
 ---
 
 ### Features
 
-- Memory Allocation. Contiki is designed for tiny systems, having only a few kilobytes of memory available.
-- Full IP Networking. Contiki provides a full IP network stack, with standard IP protocols such as UDP, TCP, and HTTP, in addition to the new low-power standards like 6lowpan, RPL, and CoAP. The Contiki IPv6 stack, developed by and contributed to Contiki by Cisco, is fully certified under the IPv6 Ready Logo program.
-- Power Awareness. Contiki is designed to operate in extremely low-power systems: systems that may need to run for years on a pair of AA batteries. To assist the development of low-power systems, Contiki provides mechanisms for estimating the system power consumption and for understanding where the power was spent.
-- 6lowpan, RPL, CoAP. Contiki supports the recently standardized IETF protocols for low-power IPv6 networking, including the 6lowpan adaptation layer, the RPL IPv6 multi-hop routing protocol, and the CoAP RESTful application-layer protocol.
-- Dynamic Module Loading. Contiki supports dynamic loading and linking of modules at run-time.
-- The Cooja Network Simulator. Contiki devices often make up large wireless networks. Developing and debugging software for such networks is really hard. Cooja, the Contiki network simulator, makes this tremendously easier by providing a simulation environment that allows developers to both see their applications run in large-scale networks or in extreme detail on fully emulated hardware devices.
-- Sleepy Routers. In wireless networks, nodes may need to relay messages from others to reach their destination. With Contiki, even relay nodes, so-called routers, can be battery-operated thanks to the ContikiMAC radio duty cycling mechanism which allows them to sleep between each relayed message. Some call this sleeping routers, we call it sleepy routers.
-- Hardware Platforms. Contiki runs on a wide range of tiny platforms, ranging from 8051-powered systems-on-a-chip through the MSP430 and the AVR to a variety of ARM devices.
-- Protothreads. To save memory but provide a nice control flow in the code, Contiki uses a mechanism called protothreads. Protothreads is a mixture of the event-driven and the multi-threaded programming mechanisms.
-- Coffee flash file system. For devices that has an external flash memory chip, Contiki provides a lightweight flash file system, called Coffee.
-- The Contiki shell. Contiki provides an optional command-line shell with a set of commands that are useful during development and debugging of Contiki systems.
-- Regression Tests. To ensure that the Contiki code works as expected, the Contiki developers use a set of nightly regression tests that test important aspects of Contiki on a daily basis in the Cooja simulator.
-- The Rime Stack. In situations when bandwidth is at a premium or where the full IPv6 networking stack is overkill, Contiki provides a tailored wireless networking stack called Rime.
-- Build System. The Contiki build system makes it easy to compile applications for any of the available Contiki platforms. This makes it easy to try out applications on a range of different platforms.
+
+- Event-driven kernel with optional per-process multi-threading capabilities.
+
+- Protothreads mechanism providing lightweight, stackless threading to minimize memory overhead.
+
+- Full IPv6 and IPv4 networking stacks including TCP, UDP, and ICMP support.
+
+- Implementation of 6LoWPAN for efficient IPv6 communication over low-power wireless links.
+
+- RPL (IPv6 Routing Protocol for Low-Power and Lossy Networks) for mesh networking.
+
+- Support for the CoAP (Constrained Application Protocol) for RESTful web services.
+
+- Dynamic loading and unloading of individual programs or services at runtime.
+
+- Integrated power profiling tools to monitor and optimize energy consumption.
+
+- Coffee flash file system designed specifically for flash memory constraints.
+
+- ContikiMAC and TSCH radio duty-cycling mechanisms for ultra-low power operation.
+
+- Cross-layer network simulation through the integrated Cooja simulator.
+
+- Support for a wide range of 8-bit, 16-bit, and 32-bit microcontroller architectures.
+
+- Rime stack providing a set of custom lightweight communication primitives.
+
+- Shell interface for interactive system management and debugging.
+
+- Standardized hardware abstraction layer for easy porting to new platforms.
+
+
+
+Contiki utilizes a modular, event-driven architecture centered around a lightweight kernel. To manage concurrency without the high memory overhead of traditional multi-threading, Contiki introduces **Protothreads**, which are stackless threads that allow for blocking operations using a very small amount of RAM per process. The system is designed to be highly portable, separating the core OS logic from the hardware-specific drivers through a well-defined abstraction layer.
+
+The system's networking subsystem is its most significant component, featuring the uIP stack for standard TCP/IP communication and the Rime stack for low-level, low-power wireless primitives. These stacks interact with various MAC and RDC (Radio Duty Cycling) layers to ensure that the radio, typically the most power-hungry component, is active only when necessary. This modularity allows developers to swap networking protocols based on the specific requirements of their IoT application.
+
+#### Core Components
+- **Kernel**: Event-driven core managing process scheduling and timers.
+- **Protothreads**: Lightweight threading library for memory-efficient concurrency.
+- **uIP Stack**: Small-footprint TCP/IP implementation supporting IPv4 and IPv6.
+- **6LoWPAN**: Adaptation layer for IPv6 over IEEE 802.15.4.
+- **Coffee FS**: A file system optimized for the wear-leveling and page-access requirements of flash memory.
+- **Cooja**: A cross-layer simulator that allows for the emulation of entire Contiki networks.
+
+### Use Cases
+This RTOS is ideal for:
+- **Smart City Infrastructure**: Powering networked street lighting and sound monitoring systems where long-term battery operation and mesh networking are required.
+- **Industrial Monitoring**: Deploying sensor networks in factories for vibration or temperature tracking using standardized industrial wireless protocols.
+- **Utility Metering**: Enabling networked electrical power meters to communicate consumption data over large-scale residential mesh networks.
+- **Environmental Sensing**: Supporting radiation or construction site monitoring where devices must remain autonomous for years on small batteries.
+
+### Getting Started
+To begin developing with Contiki, developers typically start by setting up the toolchain for their target hardware, such as the MSP430 or ARM Cortex-M. The repository includes a variety of examples in the `examples/` directory, ranging from simple 'Hello World' applications to complex web servers and mesh networking demos. For simulation-based development, the Cooja simulator (found in `tools/cooja`) is the primary tool for testing network behavior before deploying to physical hardware. Note that while this repository contains the historical Contiki-OS, new projects are often encouraged to look at **Contiki-ng**, the next-generation evolution of the platform, for updated hardware support and modern features.

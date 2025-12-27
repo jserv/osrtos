@@ -1,5 +1,5 @@
 ---
-title: News
+title: TFT_eSPI
 slug: tft-espi
 summary: TFT_eSPI is a high-performance graphics and font library optimized for 32-bit
   microcontrollers, providing hardware-accelerated rendering via DMA and PIO. It features
