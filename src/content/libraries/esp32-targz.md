@@ -24,6 +24,8 @@ platforms:
 - Xtensa
 - ARM Cortex-M
 libraryType: Middleware
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ### Features
