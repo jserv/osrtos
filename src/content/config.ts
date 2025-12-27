@@ -16,6 +16,8 @@ const rtos = defineCollection({
     components: z.array(z.string()).default([]),
     licenses: z.array(z.string()).default([]),
     platforms: z.array(z.string()).default([]),
+    createdAt: z.coerce.date(),
+    updatedAt: z.coerce.date(),
   }),
 });
 
@@ -50,6 +52,8 @@ const libraries = defineCollection({
     star: z.number().default(0),
     version: z.string().optional(),
     licenses: z.array(z.string()).default([]),
+    createdAt: z.coerce.date(),
+    updatedAt: z.coerce.date(),
   }),
 });
 
@@ -65,6 +69,11 @@ const projects = defineCollection({
     rtos: z.string(), // Reference to RTOS slug
     libraries: z.array(z.string()).default([]), // References to library slugs
     topics: z.array(z.string()).default([]), // GitHub topics (metadata only)
+    lastUpdated: z.coerce.date(),
+    star: z.number().default(0),
+    version: z.string().optional(),
+    createdAt: z.coerce.date(),
+    updatedAt: z.coerce.date(),
   }),
 });
 
