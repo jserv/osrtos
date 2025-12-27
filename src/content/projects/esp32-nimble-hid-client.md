@@ -20,6 +20,9 @@ topics:
 - mouse
 - nimble
 - pass-through
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **ESP32 NimBLE HID Client** project provides a robust framework for turning an ESP32 into a BLE Central device capable of interacting with Human Interface Devices (HID). While many ESP32 projects focus on making the microcontroller act as a BLE keyboard or mouse (a peripheral), this project flips the script, allowing the ESP32 to act as the host that consumes data from wireless peripherals.

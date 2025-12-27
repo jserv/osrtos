@@ -16,6 +16,9 @@ topics:
 - header
 - microchip-sam
 - microcontroller
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing for Microchip SAM microcontrollers requires a solid foundation of register definitions and hardware abstraction. The **cmsis-header-sam** repository provides the essential CMSIS (Cortex Microcontroller Software Interface Standard) device headers for the Microchip SAM family, ensuring that developers have access to standardized, reliable, and clean header files for their embedded projects.

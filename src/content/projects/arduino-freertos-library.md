@@ -15,6 +15,9 @@ topics:
 - avr
 - freertos-library
 - arduino-freertos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Bringing real-time operating system capabilities to the world of 8-bit microcontrollers, the Arduino FreeRTOS Library is a robust fork of Richard Barry's FreeRTOS, specifically optimized for Microchip ATmega devices. While modern 32-bit processors often dominate the RTOS conversation, this project ensures that the ubiquitous AVR architecture remains a powerful contender for complex, multi-tasking embedded applications.

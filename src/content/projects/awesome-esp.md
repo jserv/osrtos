@@ -20,6 +20,9 @@ topics:
 - iot
 - micropython
 - nodemcu
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Espressif ESP8266 and ESP32 have fundamentally changed the landscape of the Internet of Things (IoT). By providing low-cost, high-performance microcontrollers with integrated Wi-Fi and Bluetooth, Espressif enabled a massive wave of innovation in the maker and professional engineering communities. However, with such a vast ecosystem, finding the right tools can be a challenge. **Awesome ESP** solves this by providing a curated, community-driven directory of the best resources available for these chips.

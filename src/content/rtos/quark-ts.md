@@ -23,6 +23,8 @@ platforms:
 - x86
 summary: QuarkTS is a simple non-Preemtive Real-Time OS with a quasi-static scheduler
   for embedded multi-tasking applications.
+createdAt: '2025-10-27'
+updatedAt: '2025-10-27'
 ---
 
 ### Features

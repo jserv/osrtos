@@ -1,0 +1,70 @@
+name: Submit Library
+description: Submit a new embedded/RTOS library to OSRTOS.com
+title: "[Library Submission] "
+labels: ["library", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a new library to OSRTOS.com! Please provide the following information.
+
+  - type: input
+    id: name
+    attributes:
+      label: Library Name
+      description: The name of the library
+      placeholder: e.g., lwIP, FatFs, TinyUSB
+    validations:
+      required: true
+
+  - type: input
+    id: code-url
+    attributes:
+      label: GitHub Repository URL
+      description: The GitHub repository URL of the library
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Brief Description (Optional)
+      description: A brief description of the library and why it should be included
+      placeholder: Tell us about this library...
+    validations:
+      required: false
+
+  - type: dropdown
+    id: category
+    attributes:
+      label: Library Type (Optional)
+      description: What type of library is this?
+      options:
+        - GUI
+        - FileSystem
+        - Database
+        - Network
+        - Wireless
+        - MachineLearning
+        - Audio
+        - Video
+        - Graphics
+        - Language
+        - HAL
+        - Middleware
+        - Bootloader
+        - Cryptography
+        - Testing
+        - Tracing
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information (Optional)
+      description: Any other relevant information, links to documentation, or notes
+      placeholder: Documentation links, compatible RTOS, notable features, etc.
+    validations:
+      required: false

@@ -12,6 +12,9 @@ topics:
 - nim
 - nim-lang
 - nimble
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Brainfuck is one of the most famous esoteric programming languages, known for its extreme minimalism. With only eight commands, it challenges developers to think at the most fundamental level of memory manipulation. The **bf-interpreter-nim** project brings this minimalist challenge to the Nim programming language, offering a fast and efficient way to execute Brainfuck scripts.

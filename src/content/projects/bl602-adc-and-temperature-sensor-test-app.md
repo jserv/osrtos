@@ -14,6 +14,9 @@ topics:
 - pinecone
 - pinedio
 - riscv32
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The BL602 is a popular RISC-V SoC known for its Wi-Fi and Bluetooth capabilities, but it also features a variety of internal peripherals, including an Analog-to-Digital Converter (ADC) and an internal temperature sensor. The **bl602_adc_test** project provides a straightforward way for developers to verify these hardware features when running the Apache NuttX RTOS.

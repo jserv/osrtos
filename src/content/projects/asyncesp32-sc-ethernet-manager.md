@@ -32,6 +32,9 @@ topics:
 - web-portal
 - webserver-esp32-sc-enc
 - webserver-esp32-sc-w5500
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing network credentials in embedded systems often involves a classic hurdle: how do you configure a device's network settings without hardcoding them into the firmware? The **AsyncESP32_SC_Ethernet_Manager** library provides a robust solution for the modern ESP32-S2, S3, and C3 chips when paired with wired Ethernet modules like the W5500 or ENC28J60.

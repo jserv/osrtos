@@ -12,6 +12,9 @@ libraries: []
 topics:
 - telecontrolli-devices-xip
 - contiki-os
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Connecting low-power microcontrollers to the Internet of Things requires a robust networking stack and efficient hardware. Telecontrolli has addressed this for their CC1310-based Smart Devices by adapting the Contiki Operating System to create a comprehensive 6LoWPAN Border Router (6LBR) solution. This project specifically targets the X.IP4T SmartModule and the X.IP5 SmartMachine, providing the necessary firmware to bridge wireless sensor networks with standard IPv6 networks.

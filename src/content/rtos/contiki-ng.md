@@ -23,5 +23,7 @@ platforms:
 summary: Contiki-NG is an operating system for resource-constrained devices in the
   Internet of Things. Contiki-NG contains an RFC-compliant, low-power IPv6 communication
   stack, enabling Internet connectivity.
+createdAt: '2025-12-04'
+updatedAt: '2025-12-04'
 ---
 

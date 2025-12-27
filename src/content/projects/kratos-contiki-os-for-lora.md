@@ -21,6 +21,9 @@ topics:
 - lpwan
 - mesh-networks
 - semtech
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 KRATOS (The Contiki Operating System for LoRa Chipsets) is a specialized fork of Contiki OS 3.0, tailored specifically for low-power wide-area network (LPWAN) research. Developed to bridge the gap between traditional wireless sensor networks and modern LoRa technology, KRATOS provides a robust software platform for developers working with the Semtech SX1276 transceiver and the TI MSP430FR5969 microcontroller.

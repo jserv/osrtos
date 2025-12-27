@@ -13,6 +13,9 @@ topics:
 - python3
 - html-css
 - device-programming
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Bringing Objects into the Digital Realm: The 3D Cloud Scanner

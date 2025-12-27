@@ -15,6 +15,9 @@ topics:
 - cny70
 - gp2d05
 - servo
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Ardubot is a specialized robotics project developed for the Arduino UNO that tackles two classic autonomous navigation challenges: line tracking and labyrinth escape. Originally developed in 2014, the project provides a robust framework for managing sensors and actuators using a pseudo-concurrent programming model, allowing the robot to react to its environment in real-time without the overhead of a full-scale Real-Time Operating System.

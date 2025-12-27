@@ -20,6 +20,8 @@ platforms:
 - AVR8
 licenses:
 - MIT
+createdAt: '2025-12-23'
+updatedAt: '2025-12-23'
 ---
 
 ### Features

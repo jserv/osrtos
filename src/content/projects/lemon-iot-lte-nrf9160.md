@@ -22,6 +22,10 @@ topics:
 - iot
 - iot-platform
 - lemon-iot
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
+star: 4
 ---
 
 The Lemon IoT LTE nRF9160 board is a versatile development platform designed for low-power cellular IoT applications. At its heart lies the Nordic Semiconductor nRF9160 System-in-Package (SiP), which integrates an ARM Cortex-M33 application processor with a full LTE-M/NB-IoT modem and GNSS capabilities. This repository serves as the central hub for developers looking to leverage the Lemon IoT hardware within the Zephyr RTOS ecosystem.

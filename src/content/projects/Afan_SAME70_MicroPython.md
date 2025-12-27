@@ -11,6 +11,9 @@ topics:
 - same70
 - samv71
 - microchip-sam
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 

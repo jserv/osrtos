@@ -14,6 +14,9 @@ topics:
 - cmsis
 - arm
 - fortytwo
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Cortex Microcontroller Software Interface Standard (CMSIS) is a vendor-independent hardware abstraction layer for microcontrollers that are based on Arm Cortex processors. While CMSIS is a staple in professional embedded development, integrating it into the Arduino ecosystem can sometimes be a challenge. The **ArduinoModule-CMSIS** project by Forty Two Systems aims to bridge this gap by providing a streamlined way to package CMSIS 5.7.0 for the Arduino IDE.

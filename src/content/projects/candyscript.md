@@ -18,6 +18,9 @@ topics:
 - programming-language
 - server
 - webserver
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CandyScript is an intriguing project that challenges the complexity of modern web frameworks. Described as a lightweight yet superfast language, it is specifically designed for forging small web servers and REST APIs with minimal overhead. The entire project is remarkably compact, consisting of fewer than 85 lines of Nim code, yet it provides a functional environment for handling HTTP requests.

@@ -17,6 +17,9 @@ topics:
 - operating-system
 - osek
 - rtos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing real-time systems on Arduino often involves moving beyond the standard Arduino loop and into the world of formal Real-Time Operating Systems (RTOS). The **ArduinoOSEK_EE** repository provides a practical foundation for developers looking to implement the OSEK/VDX standard on Arduino hardware using **Erika Enterprise v3**, a popular open-source RTOS for automotive and embedded applications.

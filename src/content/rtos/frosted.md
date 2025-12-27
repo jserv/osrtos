@@ -16,6 +16,8 @@ platforms:
 summary: Frosted is an acronym that means "Free Operating Systems for Tiny Embedded
   Devices". The goal of this project is to provide a Free (as in Freedom) kernel for
   embedded systems, which exposes a POSIX-compliant system call API.
+createdAt: '2019-06-14'
+updatedAt: '2019-06-14'
 ---
 
 ### Features

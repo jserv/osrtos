@@ -13,6 +13,9 @@ topics:
 - rust
 - stm32
 - stm32l475
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The `b-l475e-iot01a-discovery` crate is a dedicated Board Support Package (BSP) designed for developers working with the STMicroelectronics B-L475E-IOT01A Discovery kit, also known as the IoT Node. This board is a popular choice for prototyping Internet of Things (IoT) applications, featuring an STM32L475 microcontroller and a variety of sensors and connectivity options.

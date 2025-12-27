@@ -32,6 +32,9 @@ topics:
 - ttgo-tcall
 - web-portal
 - wifi
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing connectivity in embedded systems often involves a trade-off between WiFi and Cellular (GSM/GPRS) options. Traditionally, developers had to choose one or hardcode credentials for both, making field updates a nightmare. **BlynkGSM_Manager** is a powerful library designed for ESP32 and ESP8266 modules that solves this by allowing both WiFi and GSM/GPRS to run simultaneously, managed through a dynamic web-based configuration portal.

@@ -16,6 +16,8 @@ platforms:
 - ColdFire
 summary: Nut/OS is an intentionally simple RTOS for the ATmega128, which provides
   a minimum of services to run Nut/Net, the TCP/IP stack.
+createdAt: '2021-01-15'
+updatedAt: '2021-01-15'
 ---
 
 ### Features

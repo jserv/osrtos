@@ -26,6 +26,9 @@ topics:
 - web-panel
 - webserver
 - wifi
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing firmware configurations in embedded systems often leads to a mess of `#define` macros and hardcoded constants. While this works for simple prototypes, it becomes a bottleneck when you need to change settings like WiFi credentials, sensor thresholds, or device IDs without reflashing the entire firmware. Bleeper is a library designed specifically for ESP8266 and ESP32 Arduino platforms to solve this problem by providing a robust, hierarchical configuration manager.

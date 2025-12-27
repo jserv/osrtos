@@ -14,6 +14,9 @@ topics:
 - arm
 - library
 - c
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Digital Signal Processing (DSP) on the edge often requires sophisticated mathematical transforms to extract features from raw sensor data. While the Fast Fourier Transform (FFT) is a staple in the embedded world, the Discrete Wavelet Transform (DWT) offers distinct advantages for non-stationary signals by providing both time and frequency localization. The **arm-dwt-c-library** is a dedicated C implementation of the 1D DWT, built to run efficiently on ARM-based hardware.

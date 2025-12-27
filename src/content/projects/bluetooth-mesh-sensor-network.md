@@ -16,6 +16,9 @@ topics:
 - thingy52
 - zephyr
 - zephyr-rtos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Bluetooth Mesh Sensor Network project is a sophisticated IoT implementation designed for environmental monitoring. Developed as a group project at TU Wien, it demonstrates a full-stack approach to IoT, spanning from low-power embedded firmware to cloud-based data visualization. The system is built to monitor temperature, humidity, pressure, and CO2 levels across multiple rooms while providing a secure, asynchronous, and energy-efficient communication architecture.

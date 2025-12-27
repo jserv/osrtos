@@ -20,6 +20,9 @@ topics:
 - stm32
 - sylixos
 - zephyr
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 AWTK, which stands for **Toolkit AnyWhere**, is an open-source GUI engine developed by ZLG (ZhouLiGong). Designed with versatility in mind, it serves as a cross-platform solution for creating beautiful and efficient user interfaces across embedded systems, web browsers, mobile devices, and desktop environments. Beyond being a standalone library, AWTK is also the built-in GUI engine for AWorksOS, ZLG's IoT operating system.

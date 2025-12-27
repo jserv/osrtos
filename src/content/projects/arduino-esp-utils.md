@@ -17,6 +17,9 @@ topics:
 - wifi
 - osc
 - webserver
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing for the ESP8266 and ESP32 often involves repetitive tasks: setting up a Wi-Fi connection, managing configuration files in flash memory, or establishing communication protocols like OSC or WebSockets. The **arduino-esp-utils** library by Joseph Larralde addresses these common needs by providing a set of high-level utility classes designed to speed up the development cycle for Arduino-based projects.

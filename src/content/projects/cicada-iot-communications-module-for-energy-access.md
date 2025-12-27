@@ -21,6 +21,9 @@ topics:
 - sim7600
 - sim800
 - wifi
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Cicada is a robust IoT communications library designed to bridge the gap between embedded hardware and cloud services. Developed by EnAccess and Okra Solar, it focuses on providing a production-ready path for bi-directional communication in energy access projects. Whether you are working with 2G, 3G, 4G, or Wi-Fi, Cicada abstracts the complexities of modem AT commands and network state management into a clean, portable C++ interface.

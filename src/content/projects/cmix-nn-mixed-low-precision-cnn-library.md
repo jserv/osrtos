@@ -28,6 +28,9 @@ topics:
 - stm32h7
 - stm32l4
 - tinyml
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Running deep learning inference at the edge is a transformative capability for IoT, but it faces a significant hurdle: the extreme resource constraints of Microcontroller Units (MCUs). Most MCUs feature less than 1 MB of RAM and lack hardware support for floating-point arithmetic. To bridge this gap, **CMix-NN** provides a specialized C inference library tailored for ARM Cortex-M targets, focusing on mixed-precision quantization to squeeze maximum performance out of minimal memory.

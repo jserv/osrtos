@@ -13,6 +13,9 @@ topics:
 - spimemory
 - arduino
 - feather
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing files on external SPI flash memory in the Arduino ecosystem can be a challenge, especially when looking for a filesystem that is both lightweight and resilient to power failures. The **Arduino-LittleFS-SpiMemory-Wrapper** project provides a straightforward solution by bridging the gap between the high-integrity [LittleFS](https://github.com/ARMmbed/littlefs) and the versatile [SPIMemory](https://github.com/Marzogh/SPIMemory) library.

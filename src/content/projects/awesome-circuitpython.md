@@ -19,6 +19,9 @@ topics:
 - iot
 - micropython
 - python
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CircuitPython has revolutionized the way beginners and experts alike approach embedded systems. By bringing the simplicity of Python to microcontrollers, it removes the steep learning curve traditionally associated with low-level languages like C or C++. The **Awesome CircuitPython** repository serves as the definitive directory for this ecosystem, cataloging everything from core firmware to community-driven libraries and specialized hardware.

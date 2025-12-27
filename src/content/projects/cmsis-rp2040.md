@@ -19,6 +19,9 @@ topics:
 - raspberry-pi-pico
 - rp2040
 - templates
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Setting up a development environment for the Raspberry Pi Pico (RP2040) often involves manually installing the ARM GCC compiler, CMake, Ninja, and various SDK dependencies. The **cmsis-rp2040** project aims to streamline this process by providing a template that bridges the gap between the official Raspberry Pi Pico SDK and the Open-CMSIS-Pack ecosystem.

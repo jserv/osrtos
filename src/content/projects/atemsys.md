@@ -19,6 +19,9 @@ topics:
 - performance
 - realtime
 - xenomai
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The `atemsys` kernel module is a specialized utility designed to bridge the gap between the Linux kernel and userspace applications requiring high-performance hardware access. Developed by acontis technologies, it serves as a critical component for the EtherCAT Master Stack (EC-Master) and EtherCAT Network Simulation (EC-Simulator) by granting direct hardware control to userspace drivers without the overhead typically associated with standard kernel-to-user transitions.

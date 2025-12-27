@@ -40,6 +40,8 @@ platforms:
 summary: RTEMS is an open source RTOS that supports open standard application programming
   interfaces such as POSIX. It is used in space flight, medical, networking and many
   more embedded devices.
+createdAt: '2024-06-11'
+updatedAt: '2024-06-11'
 ---
 
 ### Features

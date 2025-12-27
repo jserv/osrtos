@@ -30,6 +30,9 @@ topics:
 - udp-multicast-server
 - udp-server
 - w6100
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ### Introduction to AsyncUDP_ESP32_SC_W6100

@@ -12,6 +12,9 @@ topics:
 - capture-recapture
 - hidden-markov-model
 - nimble
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Exploring Bayesian Capture-Recapture with R and NIMBLE

@@ -19,6 +19,9 @@ topics:
 - nim-lang
 - nimble
 - sqlite
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Bloom is a minimalist blogging engine designed for humans who value speed and simplicity. Built using the Nim programming language and the Jester web framework, Bloom aims to provide a high-performance web experience without the overhead of traditional CMS platforms. It is uniquely packaged as a single executable, making deployment as simple as running a binary.

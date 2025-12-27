@@ -14,6 +14,9 @@ topics:
 - hi3536
 - minigui
 - minigui-5-0-3
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Building graphical user interfaces for embedded systems often involves navigating complex dependency chains and cross-compilation toolchains. The **cross-compiling-minigui** project addresses this challenge by providing a structured environment to build MiniGUI, a popular lightweight graphics system, along with its essential third-party libraries.

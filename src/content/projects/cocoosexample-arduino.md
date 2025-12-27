@@ -13,6 +13,9 @@ topics:
 - arduino
 - cocoos
 - iot
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing complex applications on the Arduino Uno often hits a wall when trying to manage multiple sensors and displays simultaneously using only the standard `loop()` function. The `cocoOSExample-arduino` project provides a practical solution by porting a sample multitasking sensor handling program from cocoOS to the Arduino platform.

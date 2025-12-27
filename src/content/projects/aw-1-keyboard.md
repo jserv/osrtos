@@ -12,6 +12,9 @@ topics:
 - keyboard
 - nrf52832
 - zephyr
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The aW_1 is a split, semi-wireless mechanical keyboard designed with a focus on ergonomics, portability, and modern connectivity. Based on the Nordic nRF52832 SoC, which integrates both the CPU and Bluetooth module into a single chip, the aW_1 offers a low-power solution for users who want the freedom of Bluetooth without sacrificing the reliability of a wired connection between halves.

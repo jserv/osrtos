@@ -12,6 +12,9 @@ topics:
 - robotics
 - freertos
 - cpp20
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Powering the Texas Aimbots: An Inside Look at Their Embedded Stack

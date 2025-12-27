@@ -23,6 +23,9 @@ topics:
 - udp
 - wifi
 - async-dns-server
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Raspberry Pi Pico W has become a favorite for embedded developers due to its powerful RP2040 microcontroller and integrated CYW43439 WiFi chip. However, building responsive network services like captive portals often requires efficient, non-blocking communication. The **AsyncDNSServer_RP2040W** library addresses this by providing a fully asynchronous DNS server implementation tailored specifically for the Pico W.

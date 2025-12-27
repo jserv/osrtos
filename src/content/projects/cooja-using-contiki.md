@@ -12,6 +12,9 @@ topics:
 - cooja
 - internet-of-things
 - tutorial
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Getting Started with Cooja and Contiki

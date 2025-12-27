@@ -29,6 +29,9 @@ topics:
 - udp-multicast-server
 - udp-server
 - unicast
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Raspberry Pi Pico W has become a staple in the hobbyist and professional embedded world thanks to its powerful RP2040 microcontroller and integrated CYW43439 WiFi module. However, standard synchronous networking libraries can often become a bottleneck, forcing the CPU to wait for packet arrivals or transmission completions. The **AsyncUDP_RP2040W** library changes this dynamic by providing a fully asynchronous UDP implementation specifically for the Pico W.

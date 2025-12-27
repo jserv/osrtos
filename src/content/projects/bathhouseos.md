@@ -25,6 +25,9 @@ topics:
 - tinyos
 - txt
 - verilog
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ### Automating the Most Private Room in the House: An Introduction to BathHouseOS

@@ -19,6 +19,8 @@ platforms:
 - Xtensa
 - RISC-V
 libraryType: Graphics
+createdAt: '2024-07-06'
+updatedAt: '2024-07-06'
 ---
 
 ### Features

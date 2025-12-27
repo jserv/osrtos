@@ -14,6 +14,8 @@ licenses:
 platforms:
 - ARM
 summary: A Reliable Real-Time Operating System & Application Framework.
+createdAt: '2017-01-25'
+updatedAt: '2017-01-25'
 ---
 
 ### Features

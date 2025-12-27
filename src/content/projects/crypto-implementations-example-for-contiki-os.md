@@ -18,6 +18,9 @@ topics:
 - cryptographic-implementations
 - srecord
 - ti
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **Crypto Implementations Example** repository serves as a focused educational resource for developers looking to integrate security features into their IoT applications using Contiki OS. Specifically designed for the Texas Instruments CC2650 SensorTag, this project bridges the gap between theoretical cryptography and practical implementation on resource-constrained hardware.

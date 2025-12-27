@@ -11,6 +11,9 @@ topics:
 - contiki-os
 - cooja-simulator
 - iot-application
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Coral reefs are among the most diverse and valuable ecosystems on Earth, but they are increasingly threatened by rising ocean temperatures. To address this, the Coral Reef Monitoring System provides a simulated IoT framework for tracking environmental health in real-time. By leveraging low-power wireless sensor networks, this project demonstrates how technology can be used to safeguard fragile marine habitats.

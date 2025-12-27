@@ -28,6 +28,9 @@ topics:
 - udp-server
 - unicast
 - w5x00
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Networking on the ESP8266 is often synonymous with WiFi, but many industrial or stable IoT applications require the reliability of a wired Ethernet connection. The **AsyncUDP_Ethernet** library brings the power of asynchronous UDP communication to ESP8266 devices using external Ethernet controllers like the W5100, W5500, or ENC28J60.

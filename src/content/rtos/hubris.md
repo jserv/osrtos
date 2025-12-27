@@ -28,6 +28,8 @@ platforms:
 - POSIX
 licenses:
 - MPL-2.0
+createdAt: '2025-12-15'
+updatedAt: '2025-12-15'
 ---
 
 ### Features

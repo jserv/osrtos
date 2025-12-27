@@ -19,6 +19,9 @@ topics:
 - stm32
 - uart
 - x86-assembly
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Audio Recorder project is a practical implementation of a digital audio workstation on a microcontroller. Designed for the Nucleo-F446RE, it demonstrates how to bridge the gap between analog signals and digital storage using the STM32 ecosystem.

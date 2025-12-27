@@ -31,6 +31,8 @@ platforms:
 - PIC32
 summary: µC/OS-III is a highly portable, ROMable, scalable, preemptive, real-time,
   deterministic, multitasking kernel for microprocessors, microcontrollers and DSPs.
+createdAt: '2022-12-02'
+updatedAt: '2022-12-02'
 ---
 
 ### Features

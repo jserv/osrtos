@@ -23,6 +23,9 @@ topics:
 - learning
 - learning-exercise
 - atmel
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ArduRTOS serves as a comprehensive guide for developers looking to transition from simple sequential Arduino sketches to the world of Real-Time Operating Systems (RTOS). Created by Furkan Türkal, this repository is structured as a learning path that gradually introduces the core concepts of FreeRTOS using the familiar Arduino ecosystem.

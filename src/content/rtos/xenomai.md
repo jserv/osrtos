@@ -21,6 +21,8 @@ platforms:
 summary: Xenomai is a real-time development framework cooperating with the Linux kernel,
   in order to provide a pervasive, interface-agnostic, hard real-time support to user-space
   applications, seamlessly integrated into the GNU/Linux environment.
+createdAt: '2018-07-25'
+updatedAt: '2018-07-25'
 ---
 
 ### Features

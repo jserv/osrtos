@@ -18,6 +18,8 @@ summary: Prex is an open source, royalty-free, real-time operating system for em
   systems. It is designed and implemented for resource-constrained systems that require
   predictable timing behavior. The highly portable code of Prex is written in 100%
   ANSI C bas
+createdAt: '2009-10-01'
+updatedAt: '2009-10-01'
 ---
 
 ### Features

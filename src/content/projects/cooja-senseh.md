@@ -11,6 +11,9 @@ libraries: []
 topics:
 - contiki-os
 - wireless-sensor-networks
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of Wireless Sensor Networks (WSNs), energy is the most precious resource. While traditional simulations often focus on battery depletion, the rise of Energy Harvesting (EH) technologies has created a need for more sophisticated modeling tools. Enter **SensEH**, a specialized plugin for the Cooja simulator (the standard simulation environment for Contiki OS) designed to model nodes that can replenish their energy while operating.

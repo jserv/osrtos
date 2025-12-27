@@ -14,6 +14,9 @@ topics:
 - adafruit
 - e-ink
 - e-paper
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Adafruit E-Paper / E-Ink Library for Mongoose OS is a powerful wrapper around the popular [Adafruit EPD Library](https://github.com/adafruit/Adafruit_EPD), specifically tailored for the Mongoose OS ecosystem. E-paper displays (EPD) are increasingly popular in low-power IoT applications due to their high contrast and ability to maintain an image without power. This library brings that capability to Mongoose OS developers with a seamless integration that supports multiple languages and hardware configurations.

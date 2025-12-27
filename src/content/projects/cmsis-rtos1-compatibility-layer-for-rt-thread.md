@@ -13,6 +13,9 @@ topics:
 - cmsis-rtos
 - cmsis-rtos1
 - rt-thread
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The CMSIS-RTOS1 Compatibility Layer for RT-Thread is a specialized middleware designed to bridge the gap between the ARM CMSIS-RTOS API v1 and the RT-Thread real-time operating system. For developers working with legacy codebases or third-party libraries originally written for CMSIS-compliant kernels, this package provides a seamless migration path, allowing application code to run on RT-Thread without modification.

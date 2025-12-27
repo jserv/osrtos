@@ -12,6 +12,9 @@ topics:
 - data-over-sound
 - mbed
 - mbed-os
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Bringing Data-over-Sound to Mbed OS

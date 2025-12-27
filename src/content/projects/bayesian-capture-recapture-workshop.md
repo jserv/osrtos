@@ -19,6 +19,9 @@ topics:
 - mcmc
 - multievent-models
 - nimble
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The `bayesian-cr-workshop` repository, maintained by Olivier Gimenez, is a specialized educational resource designed for ecologists, statisticians, and researchers focusing on Bayesian capture-recapture (CR) inference. Capture-recapture methods are fundamental in ecology for estimating population size, survival rates, and movement patterns when individuals cannot be perfectly tracked. This workshop leverages modern statistical tools—specifically the R programming language and the NIMBLE package—to provide a deep dive into these complex hierarchical models.

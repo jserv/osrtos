@@ -14,6 +14,9 @@ topics:
 - cortex-m
 - rtos
 - microcontroller
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Nano RTOS is a minimalist "bare" RTOS designed specifically for ARM Cortex-M architectures. Its primary goal is to provide the smallest possible thread switcher while remaining flexible enough for developers to implement their own scheduling models. Whether you need preemptive multi-threading, cooperative multitasking, or a prioritized real-time scheduler, Nano RTOS provides the low-level context-switching logic required to get your threads running.

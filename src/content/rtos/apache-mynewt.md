@@ -25,6 +25,8 @@ summary: Apache Mynewt OS is a real-time, modular operating system for connected
   devices that need to operate for long periods of time under power, memory, and storage
   constraints. It provides a complete environment for prototyping, developing, and
   managing em
+createdAt: '2025-12-19'
+updatedAt: '2025-12-19'
 ---
 
 ### Features

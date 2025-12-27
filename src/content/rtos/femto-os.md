@@ -14,6 +14,8 @@ licenses:
 platforms:
 - AVR
 summary: 'Femto OS: RTOS for small MCU''s like AVR.'
+createdAt: '2010-04-24'
+updatedAt: '2010-04-24'
 ---
 
 ### Features

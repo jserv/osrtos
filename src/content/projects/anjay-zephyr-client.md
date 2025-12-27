@@ -17,6 +17,9 @@ topics:
 - embedded
 - zephyr
 - zephyr-rtos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Anjay-zephyr-client is a comprehensive repository designed to bridge the gap between the Lightweight Machine to Machine (LwM2M) protocol and the Zephyr RTOS ecosystem. Maintained by AVSystem, it provides a suite of sample applications that utilize the [Anjay Zephyr Module](https://github.com/AVSystem/Anjay-zephyr) to enable IoT devices with robust management capabilities, including firmware updates, sensor data reporting, and remote configuration.

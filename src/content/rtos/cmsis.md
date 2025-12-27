@@ -19,6 +19,8 @@ summary: CMSIS is a set of tools, APIs, frameworks, and workflows designed to si
   abstraction layer for Arm® Cortex®-M based processors and later expanded to support
   entry-level Arm Cortex-A based processors. CMSIS aims to provide a consistent approach
   to interface with peripherals, real-time operating systems, and middleware components.
+createdAt: '2024-09-03'
+updatedAt: '2024-09-03'
 ---
 
 ### Features

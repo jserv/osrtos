@@ -12,6 +12,9 @@ libraries: []
 topics:
 - pkg
 - rt-thread
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing for an RTOS like RT-Thread often involves creating or porting libraries into the official package ecosystem. To maintain high quality, a package should ideally include elegant code, usage examples, SConscript files for the build system, comprehensive documentation, and clear licensing. However, setting up this boilerplate manually can be tedious. This is where **buildpkg** comes in—a dedicated toolkit designed to automate the creation of RT-Thread package templates.

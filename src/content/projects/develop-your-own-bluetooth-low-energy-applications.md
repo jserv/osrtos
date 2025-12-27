@@ -29,6 +29,9 @@ topics:
 - python
 - raspberry-pi
 - zephyr
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Mastering Bluetooth Low Energy Across Platforms

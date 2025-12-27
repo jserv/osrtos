@@ -11,6 +11,9 @@ libraries: []
 topics:
 - esp8266
 - mongoose-os
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## A Smart Display for the Parisian Commuter

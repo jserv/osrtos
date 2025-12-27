@@ -18,6 +18,8 @@ summary: Huawei LiteOS is a lightweight open-source IoT OS and a smart hardware 
   smarter, delivers superb user experience, and provides better data protection. Huawei
   LiteOS is designed for smart homes, wearables, IoV, and intelligent manufacturing
   applications.
+createdAt: '2020-12-30'
+updatedAt: '2020-12-30'
 ---
 
 ### Features

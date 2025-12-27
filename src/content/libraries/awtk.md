@@ -39,6 +39,8 @@ licenses:
 - LGPL
 - LGPL-2.1
 libraryType: GUI
+createdAt: '2025-12-23'
+updatedAt: '2025-12-23'
 ---
 
 ### Features

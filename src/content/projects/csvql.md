@@ -18,6 +18,9 @@ topics:
 - readcsv
 - sql
 - sql-query
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing and analyzing data stored in CSV files often involves cumbersome manual filtering or complex scripting. **CSVql** simplifies this process by allowing developers and data analysts to treat their CSV files like relational database tables. Written in Nim, this tool provides a bridge between flat files and the power of ANSI-SQL.

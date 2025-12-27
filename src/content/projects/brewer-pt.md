@@ -16,6 +16,9 @@ topics:
 - nrf24l01
 - protothreads
 - tiva-c-series
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Monitoring a fermentation process requires precision and consistency, often involving long-duration tracking of temperature, weight, and gas production. **brewer_pt** is a specialized firmware project designed to turn a TI Tiva Launchpad (TM4C123GH6PMI) into a comprehensive fermentation monitoring gadget. By leveraging a unique multitasking approach, it allows hobbyists and brewers to keep a close eye on their brew's progress without the overhead of a full-blown RTOS.

@@ -12,6 +12,9 @@ topics:
 - iot
 - mongoose-os
 - smart-home
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing audio signals in embedded systems often requires a delicate balance between low-level hardware control and high-level logic. The **Audio Input Selector** project provides a firmware solution specifically for the ESP32, built on top of the Mongoose OS framework. This project aims to simplify the process of selecting between different audio sources, making it a useful building block for DIY audio switchers, pre-amplifiers, or smart home audio systems.

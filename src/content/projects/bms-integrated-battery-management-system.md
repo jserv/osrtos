@@ -14,6 +14,9 @@ topics:
 - bq76920
 - cortex-m
 - zephyr
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing lithium-ion battery packs requires precision, safety, and constant monitoring. The **BMS** project by Scott Nelson is a comprehensive, open-source battery management system designed specifically for 4-series (4S) Li-ion packs. Built around the Texas Instruments BQ76920 analog front-end and the Nordic nRF51822 ARM Cortex-M controller, this project provides a robust foundation for building smart battery packs with wireless connectivity.

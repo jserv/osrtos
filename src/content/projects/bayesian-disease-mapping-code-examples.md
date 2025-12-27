@@ -16,6 +16,9 @@ topics:
 - nimble
 - openbugs
 - sccongen-inla-models
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Bayesian Disease Mapping (BDM) is a critical field in public health and epidemiology, providing the statistical tools necessary to understand the distribution of diseases across geographic areas and time. The **Bayesian-DM-code-examples** repository, maintained by Andrew Lawson, serves as an open-source resource for researchers and statisticians looking to implement hierarchical Bayesian models using a variety of modern software packages.

@@ -21,6 +21,9 @@ topics:
 - pinedio
 - riscv32
 - sensor
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Bosch BME280 is a popular environmental sensor capable of measuring temperature, humidity, and atmospheric pressure in a single package. While Apache NuttX previously had support for the BMP280 (which lacks humidity sensing), this project brings a full-featured BME280 driver to the NuttX ecosystem by porting the robust implementation found in Zephyr OS.

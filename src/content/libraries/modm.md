@@ -35,6 +35,8 @@ platforms:
 licenses:
 - MPL-2.0
 libraryType: HAL
+createdAt: '2025-12-23'
+updatedAt: '2025-12-23'
 ---
 
 ### Features

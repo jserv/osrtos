@@ -22,6 +22,8 @@ platforms:
 - RISC-V
 summary: Phoenix-RTOS is an open-source, microkernel-based, realtime operating system
   for resource constrained devices.
+createdAt: '2025-12-10'
+updatedAt: '2025-12-10'
 ---
 
 ### Features

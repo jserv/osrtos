@@ -18,6 +18,9 @@ topics:
 - pinecone
 - pinedio
 - riscv32
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing for the PineDio Stack BL604 on Apache NuttX RTOS presents a unique challenge: managing a high density of GPIOs. The standard NuttX GPIO driver for the BL602 architecture often maps pins in a way that can be confusing for developers—for instance, `/dev/gpio0` might actually map to physical Pin 10. The **BL602 Expander** project solves this by providing a dedicated GPIO Expander driver that maps GPIOs 0 through 22 directly to `/dev/gpio0` through `/dev/gpio22`.

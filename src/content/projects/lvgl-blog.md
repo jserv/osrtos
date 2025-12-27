@@ -14,6 +14,9 @@ libraries:
 topics:
 - blog
 - lvgl
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The LVGL Blog serves as the central knowledge-sharing hub for the Light and Versatile Graphics Library community. It is a repository of technical wisdom, ranging from deep dives into graphics algorithms like dithering to practical guides on porting the library to diverse hardware architectures. Whether you are a seasoned embedded developer or just starting with GUI design, the blog provides a wealth of information on how to create beautiful, high-performance interfaces on resource-constrained devices.

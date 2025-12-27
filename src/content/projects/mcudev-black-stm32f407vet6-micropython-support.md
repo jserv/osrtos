@@ -14,6 +14,9 @@ topics:
 - micropython-board
 - stm32f4
 - stm32f407vet6
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The MCUDev Black STM32F407VET6 is a popular and affordable development board featuring a powerful ARM Cortex-M4 processor. This project provides the essential board definition files to integrate this hardware into the MicroPython ecosystem, allowing developers to leverage Python for high-performance embedded applications.

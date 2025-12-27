@@ -18,6 +18,8 @@ platforms:
 - x86_64
 summary: BeRTOS is a real time open source operating system supplied with drivers
   and libraries designed for the rapid development of embedded software.
+createdAt: '2018-08-09'
+updatedAt: '2018-08-09'
 ---
 
 ### Features

@@ -29,6 +29,9 @@ topics:
 - rtos
 - zephyr
 - zephyr-rtos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Zephyr RTOS has rapidly become one of the most significant open-source real-time operating systems for resource-constrained devices. As the ecosystem grows, keeping track of the best libraries, tools, and hardware can be a challenge. The **Awesome Zephyr RTOS** repository, maintained by Golioth, acts as a curated map for this vast landscape, providing developers with a centralized hub for everything Zephyr.

@@ -10,6 +10,9 @@ libraries: []
 topics:
 - mongoose-os
 - toolbox
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Streamlining Mongoose-OS Development with Common Tools

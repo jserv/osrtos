@@ -21,6 +21,9 @@ topics:
 - rc-car
 - opencv
 - pid
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The PyEspCar project by 1ZLab is a versatile, open-source robotic platform designed to bridge the gap between high-level Python programming and embedded hardware control. Built around the ESP32 microcontroller, it leverages MicroPython to provide an interactive development experience, allowing developers to use REPL (Read-Eval-Print Loop) for real-time debugging and testing without the overhead of traditional C++ compilation cycles.

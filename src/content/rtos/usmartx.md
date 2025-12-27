@@ -15,6 +15,8 @@ platforms:
 - ARM
 - AVR
 summary: uSmartX is a non-preemptive, multitasking, priority based RTOS.
+createdAt: '2006-01-14'
+updatedAt: '2006-01-14'
 ---
 
 ### Features

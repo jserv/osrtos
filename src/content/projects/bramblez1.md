@@ -16,6 +16,9 @@ topics:
 - smcp
 - visualisation
 - zolertia-z1
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Visualizing Multi-hop Networks with BRambleZ1

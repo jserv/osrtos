@@ -17,6 +17,8 @@ platforms:
 - RISC-V
 summary: The world's first operating-system kernel with an end-to-end proof of implementation
   correctness and security enforcement is available as open source.
+createdAt: '2025-12-14'
+updatedAt: '2025-12-14'
 ---
 
 ### Features

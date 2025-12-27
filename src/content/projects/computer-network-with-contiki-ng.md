@@ -13,6 +13,9 @@ topics:
 - computer-networks
 - contiki-ng
 - cooja
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **Computer-Network-with-ContikiNG** project is a practical implementation of networking concepts developed for the BIL401 Computer Networks course. Built on top of the **Contiki-NG** operating system, the project focuses on simulating and analyzing low-power wireless networks using the **Cooja** emulator. It serves as a hands-on exploration of how modern IoT routing protocols function in constrained environments.

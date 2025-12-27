@@ -16,6 +16,9 @@ topics:
 - pinecone
 - pinedio
 - riscv32
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The BL602 is a popular RISC-V SoC from Bouffalo Lab, widely used in IoT applications due to its integrated Wi-Fi and Bluetooth capabilities. While Apache NuttX provides a robust RTOS environment for this chip, native driver support for specific peripherals like the Analog-to-Digital Converter (ADC) and the internal temperature sensor is sometimes a work in progress. The **bl602_adc** library fills this gap by providing a ported version of the BL602 MCU SDK's standard drivers specifically tailored for the NuttX ecosystem.

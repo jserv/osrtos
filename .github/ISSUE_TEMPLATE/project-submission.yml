@@ -1,0 +1,63 @@
+name: Submit Project
+description: Submit a project that uses an RTOS or embedded library to OSRTOS.com
+title: "[Project Submission] "
+labels: ["project", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a project to OSRTOS.com! Please provide the following information.
+
+  - type: input
+    id: name
+    attributes:
+      label: Project Name
+      description: The name of the project
+      placeholder: e.g., IoT Weather Station, Smart Home Controller
+    validations:
+      required: true
+
+  - type: input
+    id: code-url
+    attributes:
+      label: GitHub Repository URL
+      description: The GitHub repository URL of the project
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Brief Description (Optional)
+      description: A brief description of the project
+      placeholder: Tell us about this project...
+    validations:
+      required: false
+
+  - type: input
+    id: rtos-used
+    attributes:
+      label: RTOS Used (Optional)
+      description: Which RTOS does this project use?
+      placeholder: e.g., FreeRTOS, Zephyr, etc.
+    validations:
+      required: false
+
+  - type: input
+    id: libraries-used
+    attributes:
+      label: Libraries Used (Optional)
+      description: Which libraries does this project use? (comma-separated)
+      placeholder: e.g., lwIP, FatFs, TinyUSB
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information (Optional)
+      description: Any other relevant information, hardware requirements, or notes
+      placeholder: Hardware platform, documentation links, demo videos, etc.
+    validations:
+      required: false

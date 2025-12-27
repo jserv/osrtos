@@ -15,6 +15,9 @@ topics:
 - hidden-markov-models
 - nimble
 - rstats
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The "Banana Book" is a specialized technical resource designed for ecologists, statisticians, and data scientists working with capture-recapture data. This repository serves as the companion to the textbook, providing all the necessary code and data to reproduce complex ecological analyses. The primary focus is on estimating animal population parameters—such as survival and movement—when individuals are not perfectly observable, a common challenge in field biology.

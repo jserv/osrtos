@@ -31,6 +31,9 @@ topics:
 - ssl
 - staticip
 - wifimanager
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 For developers working with ESP8266 and ESP32, managing WiFi and Blynk credentials often involves the tedious cycle of hardcoding strings and reflashing firmware whenever network environments change. **Blynk_Async_WM** is designed to eliminate this friction by providing a powerful, asynchronous WiFiManager that handles network and service configuration at runtime.

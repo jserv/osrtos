@@ -18,6 +18,9 @@ topics:
 - mbed-os
 - mbed-studio
 - microcontroller
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Bitcraze Crazyflie is one of the most popular platforms for nano-drone research and development. While the official firmware typically relies on FreeRTOS, this repository from Insper provides an alternative implementation built on top of **ARM Mbed OS**. This transition allows developers to leverage the Mbed ecosystem, including its standardized APIs and build tools like Mbed Studio.

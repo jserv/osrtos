@@ -28,6 +28,9 @@ topics:
 - lwip
 - unicast
 - udp-broadcast
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Teensy 4.1 is one of the most powerful microcontrollers in the hobbyist and professional prototyping space, featuring a high-speed processor and built-in Ethernet capabilities. However, to truly leverage that power in networking applications, developers often need more than standard blocking libraries. Enter **AsyncUDP_Teensy41**, a library designed to bring fully asynchronous UDP communication to the Teensy 4.1 platform.

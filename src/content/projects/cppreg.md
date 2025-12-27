@@ -14,6 +14,9 @@ topics:
 - cpp
 - mcu
 - register
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of embedded systems, interacting with hardware often means wrestling with memory-mapped I/O (MMIO) registers. Traditionally, this is done using C-style macros, bitwise shifts, and masks—a process that is notoriously error-prone and difficult to read. `cppreg` is a header-only C++11 library that aims to modernize this workflow, providing a type-safe and expressive way to manipulate hardware registers without sacrificing performance.

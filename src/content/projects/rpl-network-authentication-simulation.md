@@ -15,6 +15,9 @@ topics:
 - iot
 - rpl
 - simulation
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **RPL Network Authentication Simulation** is a specialized project designed to model a secure Internet of Things (IoT) infrastructure within a healthcare context. Built on top of the **Contiki-OS** and simulated using the **Cooja** environment, this project addresses the critical need for security in 6LoWPAN networks, specifically focusing on protecting hospital data from common wireless threats.

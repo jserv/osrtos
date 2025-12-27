@@ -30,6 +30,9 @@ topics:
 - issi
 - adesto-flash-chip
 - issi-flash-chip
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing persistent data on microcontrollers can be a challenge, especially when dealing with flash memory wear and power failure risks. The **LittleFS_Mbed_RP2040** library addresses this by providing a robust LittleFS wrapper specifically for RP2040-based boards running on the Arduino-mbed core. This includes popular hardware like the Raspberry Pi Pico, Arduino Nano RP2040 Connect, and Adafruit Feather RP2040.

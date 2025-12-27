@@ -12,6 +12,9 @@ libraries: []
 topics:
 - riot-os
 - riot
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The RIOT Applications repository serves as a historical and functional collection of tools designed to extend the capabilities of the RIOT operating system. While many of these applications have recently been integrated directly into the main RIOT codebase as examples, this repository remains a valuable reference for developers looking to understand how to build complex, feature-rich applications on top of the RIOT kernel.

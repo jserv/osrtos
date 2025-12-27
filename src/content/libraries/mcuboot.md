@@ -29,6 +29,8 @@ platforms:
 licenses:
 - Apache-2.0
 libraryType: Bootloader
+createdAt: '2025-12-12'
+updatedAt: '2025-12-12'
 ---
 
 ### Features

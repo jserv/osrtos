@@ -15,6 +15,9 @@ topics:
 - eeprom
 - homekit
 - spiffs
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Building a custom digital clock is a classic maker project, but the 7-Segment Clock by iml885203 takes it a step further by integrating modern IoT capabilities. Using an ESP8266 and addressable WS2812B LED strips, this project creates a large, vibrant display that stays perfectly in sync with network time (NTP) and offers a sleek web interface for customization.

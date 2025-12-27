@@ -18,6 +18,9 @@ topics:
 - kicad
 - pcb-layout
 - stm32
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Avem is a comprehensive open-source flight control system designed for Unmanned Aerial Vehicles (UAVs). Built around the popular and cost-effective STM32F103 microcontroller, Avem provides a robust foundation for hobbyists and engineers looking to understand the inner workings of flight stabilization and control.

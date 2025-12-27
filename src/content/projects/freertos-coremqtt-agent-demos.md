@@ -13,6 +13,9 @@ topics:
 - freertos
 - iot
 - mqtt
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing MQTT connections in a multi-threaded RTOS environment often presents a challenge: how do you allow multiple independent tasks to publish and subscribe without complex synchronization or multiple socket connections? The **coreMQTT Agent Demos** repository provides a blueprint for solving this using the coreMQTT Agent library.

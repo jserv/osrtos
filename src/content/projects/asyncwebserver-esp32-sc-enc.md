@@ -32,6 +32,9 @@ topics:
 - send-in-chunks
 - webserver
 - websockets
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of embedded systems, performance and responsiveness are often at odds with the resource constraints of microcontrollers. The **AsyncWebServer_ESP32_SC_ENC** library addresses this challenge for the ESP32 ecosystem, specifically targeting the S2, S3, and C3 variants paired with the ENC28J60 Ethernet controller. By leveraging the LwIP stack and an asynchronous architecture, it allows developers to build robust web interfaces that don't stall the main application loop.

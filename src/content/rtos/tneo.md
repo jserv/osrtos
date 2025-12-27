@@ -15,6 +15,8 @@ platforms:
 - ARM
 summary: TNeo is a well-formed and carefully tested preemptive real-time kernel for
   16- and 32-bits MCUs. It is compact and fast.
+createdAt: '2024-12-28'
+updatedAt: '2024-12-28'
 ---
 
 ### Features

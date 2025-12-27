@@ -14,6 +14,9 @@ topics:
 - marte
 - code-generation
 - aspect-oriented-software
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The development of real-time embedded systems often faces a significant challenge: managing the complexity of cross-cutting concerns like timing, synchronization, and hardware constraints without cluttering the core functional logic. The **AMoDE-RT** (Aspect-Oriented Model-Driven Engineering for Real-Time systems) project addresses this by leveraging model-driven engineering and aspect-oriented design to separate these concerns effectively.

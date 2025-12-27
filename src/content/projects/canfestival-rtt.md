@@ -13,6 +13,9 @@ topics:
 - canfestival
 - canopen
 - rt-thread
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CanFestival-RTT brings the power of the CanFestival CANopen protocol stack to the RT-Thread ecosystem. As a fork of the CanFestival-3 project, this package is designed to be a "plug-and-play" solution for developers needing robust CANopen functionality on RT-Thread-supported hardware. By leveraging RT-Thread's native driver interfaces, it provides a standardized way to implement CANopen master or slave nodes across various MCU architectures.

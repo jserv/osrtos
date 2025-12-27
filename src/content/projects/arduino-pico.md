@@ -30,6 +30,9 @@ topics:
 - rp2350
 - risc-v
 - riscv
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Raspberry Pi Pico and its successors, the RP2350 series, have redefined what developers expect from low-cost microcontrollers. While the official C/C++ SDK is powerful, many developers prefer the accessibility and vast ecosystem of the Arduino framework. **Arduino-Pico**, maintained by Earle Philhower, is the premier community-driven core that brings the full power of the RP2040 and RP2350 to the Arduino IDE.

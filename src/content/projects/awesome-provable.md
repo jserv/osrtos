@@ -17,6 +17,9 @@ topics:
 - isabelle
 - isabelle-hol
 - sel4
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of mission-critical software and embedded systems, the cost of a bug can be catastrophic. While traditional testing can find many errors, it can rarely prove their absence. This is where formal verification comes in—the process of using mathematical proofs to ensure that a program behaves exactly as intended. The **Awesome Provable** repository serves as a comprehensive guide to this rigorous field, collecting the best tools, languages, and projects that make provably correct software a reality.

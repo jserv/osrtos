@@ -16,6 +16,9 @@ topics:
 - iot
 - micropython
 - python
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Badgy is an open-source IoT badge that combines the versatility of the ESP8266 microcontroller with the low-power readability of a 2.9-inch e-paper display. Designed by Squarofumi (SQFMI), it serves as a highly customizable platform for makers, hackers, and conference attendees who want more than just a static name tag. Whether you want to display your Twitter handle, a QR code, or live data from a web API, Badgy provides the hardware and software framework to make it happen.

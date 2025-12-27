@@ -14,6 +14,9 @@ topics:
 - xiao-cheng-xu
 - miniprogram
 - aliyun
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Exploring AliOS Things 3.0 Application Development

@@ -18,6 +18,8 @@ platforms:
 - PIC
 summary: BRTOS is a lightweight preemptive real time operating system designed for
   low end microcontrollers.
+createdAt: '2018-03-01'
+updatedAt: '2018-03-01'
 ---
 
 ### Features

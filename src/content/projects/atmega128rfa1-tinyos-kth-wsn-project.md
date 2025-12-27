@@ -12,6 +12,9 @@ topics:
 - atmega128rfa1
 - tinyos
 - wsn
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **atmega128rfa1-tinyos-kth-wsn** repository is a specialized collection of software components and applications built for the ATmega128RFA1, a popular microcontroller that integrates an AVR core with a 2.4GHz IEEE 802.15.4 radio. Developed within the context of Wireless Sensor Network (WSN) research at KTH Royal Institute of Technology, this project provides a robust foundation for building low-power wireless applications using the TinyOS operating system.

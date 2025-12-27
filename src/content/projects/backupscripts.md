@@ -13,6 +13,9 @@ topics:
 - unitrends
 - update
 - updates
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing a modern IT environment requires robust automation to ensure that critical configurations and credentials are never lost. The **BackupScripts** repository by OsbornePro provides a versatile toolkit for system administrators to handle backups and updates across Windows and Linux environments. Rather than relying on manual exports, these scripts allow for scheduled, repeatable tasks that safeguard everything from Active Directory components to storage appliance firmware.

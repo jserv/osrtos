@@ -24,6 +24,9 @@ topics:
 - sk6812
 - uart
 - ws2812b
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Lighting Up the RP2040 with Arcus

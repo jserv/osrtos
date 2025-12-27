@@ -27,6 +27,9 @@ topics:
 - tinyos
 - txt
 - verilog
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 BathOS is a specialized subsystem of the broader BathHouseOS project, born out of a practical need to solve common household problems related to bathtub management. The project addresses issues such as accidental flooding, lack of temperature control, and inefficient water usage through a dedicated embedded operating system approach.

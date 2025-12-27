@@ -15,6 +15,9 @@ topics:
 - mbed
 - mbed-os
 - ide
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The FRDM-KL25Z is an ultra-low-cost development platform for Kinetis L Series MCUs, specifically the KL1x and KL2x families built on the Arm Cortex-M0+ processor. This repository serves as a comprehensive starter kit for developers looking to explore the capabilities of this hardware using the mbed ecosystem. It provides a series of graduated examples that move from basic 'Hello World' style LED blinking to more advanced peripheral control.

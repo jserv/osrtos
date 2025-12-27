@@ -18,6 +18,9 @@ topics:
 - posix
 - real-time
 - rtos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 R3v2 is a sophisticated real-time operating system (RTOS) specifically engineered for ARM Cortex-M microcontrollers. Developed by Anatoly Georgievski, this kernel distinguishes itself by prioritizing non-blocking execution through lock-free and wait-free synchronization primitives. Whether you are working with legacy CMSIS-RTOS code or modern C11 threads, R3v2 provides a robust foundation for high-performance embedded applications.

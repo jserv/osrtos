@@ -30,6 +30,9 @@ topics:
 - wt32-eth01
 - lwip-w6100
 - w6100
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of embedded systems, blocking operations can be the enemy of a responsive application. When an ESP32 needs to perform an HTTPS request, standard libraries often halt execution until the server responds. The **AsyncHTTPSRequest_ESP32_Ethernet** library changes this paradigm for Ethernet-connected devices, offering a fully asynchronous way to handle secure web requests.

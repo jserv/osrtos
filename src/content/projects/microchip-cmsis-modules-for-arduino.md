@@ -15,6 +15,9 @@ topics:
 - microchip
 - arm
 - fortytwo
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **ArduinoModule-CMSIS-Microchip** repository is a critical infrastructure project for developers working with Microchip (formerly Atmel) SAM microcontrollers within the Arduino ecosystem. It provides the standardized CMSIS (Cortex Microcontroller Software Interface Standard) headers and device-specific support files required to interface with the hardware at a low level.

@@ -14,6 +14,9 @@ topics:
 - cmsis
 - python
 - rust-crate
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The CMSIS-Pack standard is a cornerstone of the ARM microcontroller ecosystem, providing a unified way for silicon vendors to distribute device support, including flash programming algorithms, memory maps, and peripheral descriptions. However, parsing and managing these XML-heavy packages can be a daunting task. Enter `cmsis-pack-manager`, a high-performance solution designed to simplify this process for developers and tool creators.

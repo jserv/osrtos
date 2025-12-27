@@ -31,6 +31,9 @@ topics:
 - w5500
 - w6100
 - udp-unicast
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of embedded systems, networking performance can often become a bottleneck, especially when dealing with synchronous protocols that block the main execution loop. The **AsyncUDP_ESP32_Ethernet** library addresses this challenge by providing a fully asynchronous UDP implementation for ESP32, ESP32-S2, ESP32-S3, and ESP32-C3 microcontrollers using external Ethernet controllers like the W5500, W6100, and ENC28J60.

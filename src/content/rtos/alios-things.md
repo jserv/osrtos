@@ -16,6 +16,8 @@ platforms:
 summary: AliOS Things is designed for low power, resource constrained MCU, connectivity
   SoC, greatly suitable for IoT devices. AliOS Things is not just a RTOS, it contains
   full stack of software components and tools for building IoT devices.
+createdAt: '2023-07-04'
+updatedAt: '2023-07-04'
 ---
 
 ### Features

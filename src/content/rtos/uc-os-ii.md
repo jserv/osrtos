@@ -31,6 +31,8 @@ platforms:
 - PIC32
 summary: μC/OS-II is a portable, ROMable, scalable, preemptive, real-time deterministic
   multitasking kernel for microprocessors, microcontrollers and DSPs.
+createdAt: '2023-01-05'
+updatedAt: '2023-01-05'
 ---
 
 ### Features

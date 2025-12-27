@@ -13,6 +13,9 @@ topics:
 - encryption
 - man-in-the-middle-attack
 - tinyos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ### Securing Wireless Sensor Networks with TinyOS

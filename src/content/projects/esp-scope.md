@@ -11,6 +11,10 @@ libraries:
 - lwip
 topics: []
 image: /images/202512/esp-scope-3d.webp
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
+star: 166
 ---
 
 ESP-Scope is a clever implementation of a web-based oscilloscope leveraging the power of the ESP32 and the ESP-IDF framework. Designed to provide real-time signal visualization through a standard web browser, this project eliminates the need for dedicated display hardware by serving a responsive UI directly from the microcontroller. It is particularly optimized for the Seeed XIAO ESP32C6, though it can be adapted for other ESP32-based development boards.

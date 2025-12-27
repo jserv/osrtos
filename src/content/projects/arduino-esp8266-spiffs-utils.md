@@ -14,6 +14,9 @@ topics:
 - esp8266-arduino
 - flash
 - filesystem
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing files on an ESP8266 can often be a cumbersome process, especially when dealing with the SPIFFS (Serial Peripheral Interface Flash File System). The **arduino-esp8266-spiffs-utils** project provides a streamlined solution for developers needing to back up or archive data from their IoT devices without physical access or serial connections.

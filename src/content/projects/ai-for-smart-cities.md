@@ -14,6 +14,9 @@ topics:
 - machine-learning
 - simulation
 - smartcities
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 As urban environments become increasingly digitized, the concept of the 'Smart City' relies heavily on the seamless integration of IoT devices, wireless sensor networks (WSN), and intelligent data processing. The **AI-for-Smart-Cities** project provides a robust framework for addressing several critical challenges in this domain, ranging from network security and anomaly detection to the management of crowdsourced tasks.

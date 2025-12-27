@@ -20,6 +20,9 @@ topics:
 - mh2103a
 - lvgl
 - freertos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The AIR32F103 series has gained popularity as a high-performance, cost-effective alternative to the ubiquitous STM32F103. To help developers harness the full potential of these chips, the **air32f103-template** repository provides a robust, Makefile-based environment tailored for the GNU Arm Embedded Toolchain. This project is designed to be a one-stop-shop for developers who prefer a lightweight, command-line driven workflow or VSCode integration over heavy IDEs.

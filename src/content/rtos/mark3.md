@@ -15,6 +15,8 @@ platforms:
 - AVR
 summary: Mark3 is a sophisticated, modern RTOS and application development platform,
   targeted towards a growing list of today's most compelling embedded devices.
+createdAt: '2015-03-08'
+updatedAt: '2015-03-08'
 ---
 
 ### Features

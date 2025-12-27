@@ -17,6 +17,8 @@ platforms:
 summary: TinyOS is an open source, BSD-licensed operating system designed for low-power
   wireless devices, such as those used in sensor networks, ubiquitous computing, personal
   area networks, smart buildings, and smart meters.
+createdAt: '2025-10-30'
+updatedAt: '2025-10-30'
 ---
 
 ### Features

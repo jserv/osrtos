@@ -16,6 +16,9 @@ topics:
 - cmsis-nn
 - cmsis-rtos
 - cmsis-rtos2
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Understanding CMSIS: The Standard for Cortex-M Development

@@ -20,6 +20,9 @@ topics:
 - os
 - scheduler
 - small
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing for microcontrollers often involves managing multiple tasks simultaneously. While many developers reach for heavy-duty RTOS solutions, there is significant educational and practical value in minimalist kernels. The **ATMega328P Operating System** is a project that provides a simple, round-robin scheduler specifically tailored for the AVR architecture, commonly found in the Arduino Uno.

@@ -11,6 +11,9 @@ rtos: rt-thread
 libraries:
 - lwip
 topics: []
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The RT-Thread ART (Arduino RT-Thread) project represents a powerful convergence between the user-friendly Arduino ecosystem and the robust capabilities of a professional Real-Time Operating System. Built around the high-performance STM32F407VGT6 ARM Cortex-M4 microcontroller, ART provides a platform that is hardware-compatible with Arduino shields while offering a significantly more advanced software environment.

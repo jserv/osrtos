@@ -13,6 +13,9 @@ topics:
 - cmsis
 - codegen
 - svd
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ### Bridging the Gap Between Hardware Specs and Source Code

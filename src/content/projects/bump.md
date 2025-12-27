@@ -18,6 +18,9 @@ topics:
 - package
 - tool
 - version
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing version numbers and release tags can be a repetitive and error-prone task for developers. For those working in the Nim ecosystem, **bump** provides a streamlined solution to automate the entire process of updating a package's version, committing the change, and pushing it to a remote repository.

@@ -11,6 +11,9 @@ libraries: []
 topics:
 - rt-thread
 - clock
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Bringing a Classic Visual to the RT-Thread Terminal

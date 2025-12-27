@@ -15,6 +15,9 @@ topics:
 - mega
 - mega2560
 - spiffs
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Integrating a reliable file system into resource-constrained microcontrollers can be a challenge, especially when dealing with external SPI flash memory. The **avr_spiffs** project addresses this by providing a streamlined port of the SPIFFS (SPI Flash File System) specifically for the AVR architecture, with a focus on the Arduino Mega 2560.

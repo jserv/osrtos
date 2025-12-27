@@ -17,6 +17,9 @@ topics:
 - js
 - micropython
 - vuejs
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 For coffee enthusiasts and home baristas, precision is everything. The DIY Smart Coffee and Espresso Scale project bridges the gap between high-end commercial smart scales and DIY hardware, providing a robust ecosystem for tracking espresso extractions in real-time. This project consists of two main components: a high-performance Rust-based firmware for the ESP32 microcontroller and a modern Svelte-powered Progressive Web App (PWA).

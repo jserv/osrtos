@@ -16,6 +16,9 @@ topics:
 - header
 - microcontroller
 - stm32
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Developing for STM32 microcontrollers requires a solid foundation of register definitions and hardware abstraction. While STMicroelectronics provides these through their STM32Cube libraries, the raw files often come with Windows-style line endings and inconsistent whitespace, which can be a nuisance for developers using modern Git-based workflows or Unix-like environments. The **modm-io/cmsis-header-stm32** repository solves this by providing a clean, automated mirror of the official CMSIS device headers.

@@ -25,6 +25,9 @@ topics:
 - nrf52840
 - esp-idf
 - ant-softdevice
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **ant-arduino** library is a robust solution for developers looking to integrate ANT wireless protocol capabilities into their embedded projects. Originally forked from the xbee-arduino project, it has evolved into a specialized driver for ANT radios, supporting a wide array of packet types and providing a clean, object-oriented interface for both Arduino and Mbed OS environments.

@@ -14,6 +14,9 @@ topics:
 - wsn
 - c
 - iot
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In large-scale enterprise environments, maintaining real-time visibility of high-value or mission-critical assets is a significant logistical challenge. Project ASTRA (Asset Tracking) provides a robust solution designed to track moving assets across multiple locations using a network of wireless nodes. Developed on the Contiki operating system, this project leverages low-power wireless communication to ensure efficient, energy-aware monitoring.

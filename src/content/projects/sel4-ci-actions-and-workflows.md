@@ -13,6 +13,9 @@ topics:
 - ci-actions
 - continuous-integration
 - sel4
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Maintaining a high-assurance ecosystem like the seL4 microkernel requires more than just high-quality code; it requires rigorous, automated verification and testing. The **seL4/ci-actions** repository serves as the central hub for the continuous integration (CI) infrastructure used by the seL4 Foundation. By consolidating GitHub Actions and workflow definitions into a single location, the project avoids duplication and ensures that every repository in the seL4 ecosystem adheres to the same stringent standards.

@@ -11,6 +11,9 @@ libraries: []
 topics:
 - cmsis
 - gcc
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 ## Streamlining ARM Development with CMSIS Addon

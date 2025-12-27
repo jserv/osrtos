@@ -18,15 +18,11 @@ const latestLibraries = allLibraries
   .slice(0, 8);
 
 // Fetch featured projects (where isShow = true)
-// Sort by related RTOS's lastUpdated date
+// Sort by createdAt date (descending - newest first)
 const allProjects = await getCollection('projects');
 const featuredProjects = allProjects
   .filter(p => p.data.isShow)
-  .sort((a, b) => {
-    const rtosA = allRtos.find(r => r.data.slug === a.data.rtos);
-    const rtosB = allRtos.find(r => r.data.slug === b.data.rtos);
-    return (rtosB?.data.lastUpdated.valueOf() || 0) - (rtosA?.data.lastUpdated.valueOf() || 0);
-  })
+  .sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf())
   .slice(0, 8);
 ---
 
@@ -41,6 +37,19 @@ const featuredProjects = allProjects
       Discover the best Open Source RTOS solutions for embedded systems and IoT devices
     </p>
   </section>
+
+  {featuredProjects.length > 0 && (
+     <section class="mb-16">
+       <div class="flex justify-between items-center mb-8">
+         <h2 class="text-3xl md:text-4xl font-bold m-0 text-gray-800 dark:text-gray-100">Featured Projects</h2>
+         <a href="/projects/"
+            class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 no-underline font-semibold text-base transition-colors">
+           View All →
+         </a>
+       </div>
+       <ProjectsList projects={featuredProjects}/>
+     </section>
+  )}
 
   <section class="mb-16">
     <div class="flex justify-between items-center mb-8">
@@ -64,12 +73,5 @@ const featuredProjects = allProjects
     <LibraryList libraries={latestLibraries}/>
   </section>
 
-  {featuredProjects.length > 0 && (
-     <section class="mb-16">
-       <div class="flex justify-between items-center mb-8">
-         <h2 class="text-3xl md:text-4xl font-bold m-0 text-gray-800 dark:text-gray-100">Featured Projects</h2>
-       </div>
-       <ProjectsList projects={featuredProjects}/>
-     </section>
-  )}
+
 </Layout>

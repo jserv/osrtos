@@ -17,6 +17,8 @@ summary: HuskEOS is a real-time operating system (RTOS) designed for embedded sy
   It offers a priority-based preemptive scheduler and boasts impressive performance
   metrics, such as achieving 50,000 context switches per second on a Cortex-M4 configured
   at 16MHz.
+createdAt: '2024-09-11'
+updatedAt: '2024-09-11'
 ---
 
 ### Features

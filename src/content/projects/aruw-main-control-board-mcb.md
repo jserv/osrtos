@@ -18,6 +18,9 @@ topics:
 - robomaster
 - cpp
 - vscode
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **ARUW Main Control Board (MCB)** project serves as the brain for the University of Washington’s advanced robotics team in the RoboMaster competition. This repository contains the firmware that directly operates the major systems of their robots, from the high-speed launcher wheels to the precision-controlled turrets and drive systems. Built primarily for the **RoboMaster Development Board Type A**, the project is a sophisticated example of modern embedded C++ development applied to competitive robotics.

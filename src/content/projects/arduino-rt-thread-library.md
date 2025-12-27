@@ -18,6 +18,9 @@ topics:
 - ili9341
 - ft6206
 - arduino-library
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The Arduino ecosystem is beloved for its simplicity, but as projects grow in complexity, managing multiple tasks using only `millis()` and state machines can become a bottleneck. The **Arduino RT-Thread Library** bridges this gap by bringing the power of RT-Thread—a mature, open-source real-time operating system—directly to the Arduino environment. This library allows developers to leverage professional-grade RTOS features while maintaining the familiar Arduino workflow.

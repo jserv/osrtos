@@ -1,0 +1,45 @@
+name: Submit RTOS
+description: Submit a new Real-Time Operating System to OSRTOS.com
+title: "[RTOS Submission] "
+labels: ["rtos", "submission"]
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for submitting a new RTOS to OSRTOS.com! Please provide the following information.
+
+  - type: input
+    id: name
+    attributes:
+      label: RTOS Name
+      description: The name of the Real-Time Operating System
+      placeholder: e.g., FreeRTOS, Zephyr, RT-Thread
+    validations:
+      required: true
+
+  - type: input
+    id: code-url
+    attributes:
+      label: GitHub Repository URL
+      description: The GitHub repository URL of the RTOS
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+
+  - type: textarea
+    id: description
+    attributes:
+      label: Brief Description (Optional)
+      description: A brief description of the RTOS and why it should be included
+      placeholder: Tell us about this RTOS...
+    validations:
+      required: false
+
+  - type: textarea
+    id: additional-info
+    attributes:
+      label: Additional Information (Optional)
+      description: Any other relevant information, links to documentation, or notes
+      placeholder: Documentation links, notable features, etc.
+    validations:
+      required: false

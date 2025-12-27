@@ -15,6 +15,8 @@ licenses:
 platforms:
 - ARM Cortex-M
 summary: A lightweight Active Object implementation for real-time embedded systems.
+createdAt: '2025-12-16'
+updatedAt: '2025-12-16'
 ---
 
 ### Features

@@ -18,6 +18,8 @@ platforms:
 summary: The eChronos RTOS is a real-time operating system (RTOS) originally developed
   by NICTA and Breakaway Consulting Pty. Ltd. It is intended for tightly resource-constrained
   devices without memory protection.
+createdAt: '2019-06-12'
+updatedAt: '2019-06-12'
 ---
 
 ### Features

@@ -32,6 +32,9 @@ topics:
 - w5100s
 - web-portal
 - lwip-w5100s
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing network credentials and connection settings in embedded systems can be a significant hurdle, especially when devices are deployed in the field without easy access to a serial console. The **AsyncESP8266_W5100_Manager** library addresses this challenge for ESP8266-based projects utilizing Wiznet W5100 or W5100S Ethernet controllers. By providing a robust, asynchronous web configuration portal, it allows developers to configure Ethernet settings—such as Static vs. DHCP IP, DNS servers, and custom application parameters—at runtime.

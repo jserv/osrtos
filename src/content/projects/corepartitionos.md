@@ -30,6 +30,9 @@ topics:
 - thread
 - universal
 - windows
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CorePartitionOS is a versatile and highly portable operating system designed for embedded systems where resources are at a premium. Its primary philosophy is to provide a powerful multi-threading environment using a single core, relying exclusively on standard C principles. By avoiding assembly language and using a non-stack displacement approach, it achieves a remarkably small context size—ranging from just 48 bytes on 8-bit microcontrollers to 168 bytes on 64-bit processors.

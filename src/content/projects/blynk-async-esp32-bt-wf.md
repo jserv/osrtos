@@ -30,6 +30,9 @@ topics:
 - spiffs
 - staticip
 - wifimanager
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing connectivity on the ESP32 can often feel like a series of trade-offs. Traditionally, Blynk users had to choose between WiFi or Bluetooth/BLE at compile time, requiring firmware updates just to switch communication methods. The **Blynk_Async_ESP32_BT_WF** library changes this dynamic by allowing developers to include both WiFi and BT/BLE stacks in a single sketch, enabling them to run simultaneously or be selected at runtime.

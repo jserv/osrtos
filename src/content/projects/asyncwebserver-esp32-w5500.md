@@ -31,6 +31,9 @@ topics:
 - webserver
 - websockets
 - esp-idf
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **AsyncWebServer_ESP32_W5500** library is a powerful tool for developers looking to implement high-performance web interfaces on ESP32-based hardware using wired Ethernet. While the ESP32 is famous for its Wi-Fi capabilities, many industrial and professional applications require the reliability of a wired connection. This library bridges that gap by adapting the popular asynchronous web server architecture to work seamlessly with the W5500 Ethernet controller.

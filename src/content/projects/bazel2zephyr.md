@@ -16,6 +16,9 @@ topics:
 - nrf5340
 - zephyr
 - zephyr-rtos
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Bridging the gap between modern build systems like Bazel and embedded RTOS environments like Zephyr can be a daunting task. While Bazel is renowned for its reproducible builds and dependency management, Zephyr relies heavily on CMake. The `bazel2zephyr` project provides a clear, hands-on tutorial for developers who need to take an existing Bazel-based C++ project, cross-compile it for ARM, and link it into a Zephyr application.

@@ -21,6 +21,8 @@ summary: RTAI is the RealTime Application Interface for Linux - which lets you w
   applications with strict timing constraints for your favourite operating system.
   The RTAI distribution includes RTAI-Lab, a tool chain to convert block diagrams
   into RTAI executab
+createdAt: '2018-02-05'
+updatedAt: '2018-02-05'
 ---
 
 ### Features

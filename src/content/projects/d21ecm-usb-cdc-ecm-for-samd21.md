@@ -21,6 +21,9 @@ topics:
 - usb
 - usb-cdc-ecm
 - usb-devices
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The **D21ecm** project is a specialized implementation of the USB Communication Device Class - Ethernet Control Model (CDC-ECM) for the Microchip (formerly Atmel) SAMD21 microcontroller. By leveraging this protocol, developers can transform a SAMD21-based board into a network interface that is natively recognized by operating systems like Linux and macOS, as well as many modern smartphones.

@@ -15,6 +15,9 @@ topics:
 - nfc
 - nfc-card-reader
 - x-nucleo-nfc03a1
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 The CR95HF is a versatile 13.56 MHz contactless transceiver from STMicroelectronics, often found on the X-Nucleo NFC03A1 expansion board. While powerful, integrating these chips into an embedded project requires a robust driver layer. The CR95HF library for Mbed OS provides a clean, object-oriented interface to interact with this hardware, specifically targeting ISO/IEC 14443A communication.

@@ -37,6 +37,8 @@ platforms:
 licenses:
 - GPL-3.0
 libraryType: Bootloader
+createdAt: '2025-12-23'
+updatedAt: '2025-12-23'
 ---
 
 ### Features

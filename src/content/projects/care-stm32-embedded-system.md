@@ -13,6 +13,9 @@ topics:
 - cmsis
 - embedded-systems
 - stm32f10x
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CARe is an embedded health-monitoring system designed as part of a comprehensive healthcare solution. Developed for the 7th China Software Cup competition, this project serves as the data collection hub, interfacing with various medical and physiological sensors to monitor a user's vital signs. The system is built on the STM32F10x platform, leveraging the ARM Cortex-M3 architecture for efficient data processing and sensor management.

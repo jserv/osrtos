@@ -14,6 +14,9 @@ topics:
 - protothreads
 - soil-moisture-sensor
 - water-depth-sensor
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Maintaining a healthy garden or farm requires consistent attention, particularly when it comes to irrigation. The **Automatic Smart Irrigation System** is an open-source project designed to eliminate the guesswork and manual labor involved in watering plants. By leveraging affordable microcontrollers and sensors, this system ensures that plants receive water only when necessary, preventing both dehydration and water waste.

@@ -37,6 +37,8 @@ platforms:
 licenses:
 - MIT
 libraryType: GUI
+createdAt: '2025-09-29'
+updatedAt: '2025-09-29'
 ---
 
 ### Features

@@ -13,6 +13,9 @@ topics:
 - exponential-backoff
 - nim-lang
 - nimble
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In distributed systems and network programming, handling failures gracefully is a critical requirement. When a service request fails, simply retrying immediately can lead to a 'thundering herd' problem, where multiple clients overwhelm a recovering service simultaneously. The **backoff** library for the Nim programming language provides a robust solution to this problem by implementing exponential backoff with various jitter strategies.

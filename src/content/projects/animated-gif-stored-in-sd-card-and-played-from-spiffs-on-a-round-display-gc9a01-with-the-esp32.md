@@ -20,6 +20,9 @@ topics:
 - sd-card-reader
 - spiffs
 - tftespi
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Displaying animated GIFs on microcontrollers can be a challenge due to memory constraints and storage speed. This project by the Last Outpost Workshop provides a robust solution for the ESP32, specifically targeting the popular GC9A01 round TFT display. By combining external SD card storage with the speed of internal SPIFFS (Serial Peripheral Interface Flash File System), it achieves smooth animation playback suitable for wearable tech, smart gauges, or decorative props.

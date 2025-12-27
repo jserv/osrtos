@@ -13,6 +13,9 @@ topics:
 - esp8266
 - http-server
 - mongoose-os
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 In the world of IoT and embedded systems, securing web interfaces is a critical requirement. The **auth-post-c** project provides a clean, C-based implementation of a Mongoose OS application that focuses specifically on securing HTTP endpoints using Digest Access Authentication.

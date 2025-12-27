@@ -27,6 +27,9 @@ topics:
 - protothreads
 - stackless-coroutines
 - voluntary-preemptive-scheduling
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Concurrency in JavaScript has traditionally been dominated by the event loop and asynchronous callbacks. While powerful, this model can make certain types of multitasking and long-running computations difficult to manage without blocking the main thread. The HertzScript Coroutine Compiler offers a sophisticated alternative by producing preemptible JavaScript coroutines that conform to the HertzScript specification.

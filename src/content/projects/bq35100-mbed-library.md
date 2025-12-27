@@ -12,6 +12,9 @@ topics:
 - battery-gauge
 - bq35100
 - mbed-os
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 Managing primary (non-rechargeable) batteries in embedded systems presents unique challenges compared to standard Li-ion packs. The TI BQ35100 is a dedicated fuel gauge designed specifically for these chemistries, providing accurate state-of-health and remaining capacity information. The **BQ35100 Mbed library** by pilotak provides a robust interface for this chip, specifically tailored for the Mbed OS ecosystem.

@@ -25,6 +25,9 @@ topics:
 - wearable
 - widget
 - wifi
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CDroid is a sophisticated GUI engine designed to bring the familiar Android development experience to the world of embedded systems. Built on C++11, it provides a cross-platform toolkit that allows developers to create rich, multi-layered user interfaces using the same paradigms found in mobile application development. By bridging the gap between high-level UI design and resource-constrained hardware, CDroid enables the creation of modern, fluid interfaces for a wide range of embedded devices.

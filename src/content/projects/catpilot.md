@@ -28,6 +28,9 @@ topics:
 - stm32
 - uas
 - uav
+lastUpdated: '2025-12-27'
+createdAt: '2025-12-27'
+updatedAt: '2025-12-27'
 ---
 
 CatPilot is a sophisticated open-source library designed specifically for drone autopilot systems. It serves as a foundational component of the broader `uas-catpilot` project, offering a modular and platform-independent approach to flight control software. At its heart, CatPilot leverages the `c-atom` framework, which provides the structural backbone for building complex embedded systems.

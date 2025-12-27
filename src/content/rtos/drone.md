@@ -16,6 +16,8 @@ platforms:
 - ARM
 summary: Drone is an Embedded Operating System for writing real-time applications
   in Rust.
+createdAt: '2022-11-20'
+updatedAt: '2022-11-20'
 ---
 
 ### Features
