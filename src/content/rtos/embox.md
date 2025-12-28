@@ -1,59 +1,48 @@
 ---
 title: embox
+summary: Embox is a highly modular and configurable real-time operating system designed
+  to execute Linux-compatible software on resource-constrained embedded systems and
+  microcontrollers. It provides a POSIX-compliant environment, allowing developers
+  to port complex desktop-grade libraries and applications like Qt, OpenCV, and PJSIP
+  to platforms with limited RAM and ROM.
 slug: embox
-summary: Embox is a highly modular and configurable RTOS designed to execute Linux-compatible
-  software on resource-constrained embedded systems without the overhead of a full
-  Linux kernel. It provides a robust POSIX-compliant environment, supporting a wide
-  array of architectures, file systems, and high-level programming languages while
-  maintaining a small footprint suitable for microcontrollers.
 codeUrl: https://github.com/embox/embox
 siteUrl: https://github.com/embox/embox
-star: 1514
+star: 1517
 version: v0.7.0
-lastUpdated: '2025-12-22'
+lastUpdated: '2025-12-26'
 components:
-- GUI
-- FileSystem
-- Network
-- Audio
-- Graphics
 - Shell
-- HTTP
-- TCP
-- UDP
-- NTP
-- DNS
-- DHCP
-- FTP
-- TFTP
+- Network
+- FileSystem
+- Graphics
+- GUI
 - USBHost
 - USBDevice
-- CAN
-- I2C
 - GPIO
+- I2C
 - RTC
+- FPGA
 - Bootloader
+- Scheduler
+- Memory Management
+- IPC
 - Profiling
-- Shell
+- Audio
 platforms:
 - ARM
 - ARM Cortex-M
 - ARM Cortex-A
-- AArch64
 - x86
 - RISC-V
 - MIPS
-- PowerPC
 - SPARC
+- PowerPC
 - Microblaze
+- AArch64
 - QEMU
-- STM32
-- Raspberry Pi
-- i.MX6
-- BeagleBoard
-- LEON
 licenses:
-- BSD 2-Clause
+- BSD
 libraries:
 - PJSIP
 - Qt
@@ -61,82 +50,63 @@ libraries:
 - Dropbear
 - Mesa3D
 - ZeroMQ
-- LVGL
-- FFMPEG
-- Nanomodbus
-- Ardupilot
-- TensorFlow Lite Micro
+- Qpid
+- FatFS
+- libstdc++
+- Python
+- Lua
 createdAt: '2025-12-22'
-updatedAt: '2025-12-22'
+updatedAt: '2025-12-28'
 ---
 
 ### Features
 
 
-- POSIX-compliant environment for seamless porting of existing Linux software.
+- POSIX-compliant API layer for high portability of existing Linux and Unix software.
 
-- Highly modular architecture allowing fine-grained configuration of system components.
+- Modular Mybuild build system allowing fine-grained configuration of included components and parameters.
 
-- Support for multiple architectures including ARM, x86, RISC-V, MIPS, SPARC, and PowerPC.
+- Support for multiple programming languages including Python, Java, Lua, Ruby, Lisp, and Tcl.
 
-- Integrated TCP/IP stack with BSD socket support and protocols like UDP, HTTP, and NTP.
+- Integrated TCP/IP stack with BSD socket support and protocols like HTTP, UDP, ARP, and NTP.
 
-- Support for high-level languages including Python, Java, Lua, Ruby, and JavaScript.
+- Comprehensive file system support including FAT, ext2, ext3, and ext4.
 
-- Advanced graphics support via Qt, OpenCV, Mesa3D, LVGL, and Nuklear.
+- Advanced graphics support with integrations for Qt, Nuklear, LVGL, and Mesa3D.
 
-- Multi-filesystem support including FAT, ext2/3/4, and NFS.
+- Real-time multitasking with support for preemptive and cooperative scheduling and priority inheritance.
 
-- Real-time multitasking with preemptive and cooperative scheduling and priority inheritance.
+- Cross-platform compatibility for architectures including ARM, RISC-V, x86, MIPS, SPARC, and PowerPC.
 
-- Unix-like shell environment providing standard utilities such as ls, cat, and mount.
+- Ability to run complex middleware like OpenCV and PJSIP on microcontrollers such as STM32.
 
-- Integrated SSH server based on the Dropbear project for secure remote access.
+- Unix-like shell utilities including ls, cat, mount, and ping for system interaction.
 
-- Support for industrial automation frameworks like Beremiz and 4diac Forte.
+- Support for networking services such as SSH via Dropbear, Telnet, and HTTP servers.
 
-- USB support including both Host and Device (gadget) modes on STM32.
+- Static linking of modules to ensure system security and minimize the attack surface.
 
-- VoIP capabilities through the integration of the PJSIP project.
+- USB support including both host and gadget modes for specific hardware platforms.
 
-- Static building process ensures only required modules are included for security and size.
+- Device tree support for hardware abstraction and simplified porting to new boards.
 
-- Device Tree support for standardized hardware configuration.
-
-- Comprehensive networking support on QEMU for x86, ARM, MIPS, and Microblaze.
-
-- Support for machine learning on MCUs via TensorFlow Lite Micro.
-
-- Industrial protocol support including Nanomodbus and IEC 61850.
+- Memory consumption analysis tools and autotest frameworks for development stability.
 
 
 
-### Architecture
+Embox is designed around a modular architecture that emphasizes flexibility and compatibility. The core philosophy is to provide a Linux-like environment on microcontrollers by implementing a robust POSIX layer. This allows developers to use standard C/C++ libraries and existing open-source software without the overhead of a full Linux kernel. The system is built using the 'Mybuild' engine, which treats every part of the OS—from device drivers to application code—as a discrete module that can be included or excluded at compile time to meet strict memory requirements.
 
-Embox is built upon a highly modular and configurable architectural design where every functional unit—from device drivers to network protocols—is treated as a standalone module. This modularity is managed by the proprietary "Mybuild" build system, which allows developers to define dependencies, parameters, and resource requirements for each component. This ensures that the final system image contains only the code necessary for the specific target application, which is critical for resource-constrained microcontrollers.
-
-The system provides a comprehensive POSIX-compatible layer that sits atop a microkernel-like core. This layer enables standard Linux software to run on embedded hardware by providing familiar APIs for threading, synchronization, and file I/O. The architecture is divided into arch-independent modules and a Hardware Abstraction Layer (HAL) that organizes architecture-specific code, making the process of porting Embox to new CPU architectures straightforward.
-
-#### Core Components
-- **Mybuild Framework**: The engine for module management and dependency resolution.
-- **POSIX Layer**: Compatibility layer for standard C/C++ and Linux applications.
-- **Virtual File System (VFS)**: An abstraction layer supporting multiple file system backends (FAT, ext4, etc.).
-- **TCP/IP Stack**: A full-featured network stack with BSD socket compatibility.
-- **HAL**: Architecture-specific implementations for ARM, RISC-V, x86, and others.
+The kernel supports multitasking with various scheduling policies, including preemptive and cooperative modes. It manages hardware through a structured subsystem approach, covering networking, file systems, and hardware interfaces like GPIO, I2C, and USB. By statically linking only the necessary modules, Embox creates a highly optimized binary image tailored specifically for the target hardware's capabilities.
 
 ### Use Cases
 
 This RTOS is ideal for:
 
-- **Internet of Things (IoT)**: Devices requiring robust networking stacks and high-level language support (Python/Java) on low-power MCUs.
-- **Robotics**: Applications that need to combine real-time motor and sensor control with high-level processing like OpenCV.
-- **Industrial Automation**: Systems implementing industrial standards such as Modbus or IEC 61850 and PLC frameworks like Beremiz.
-- **VoIP and Communication**: Building dedicated communication hardware using integrated PJSIP and audio subsystems on STM32 boards.
-- **Legacy Software Migration**: Porting existing Unix/Linux command-line utilities or C++ applications to embedded targets without a full Linux kernel.
-- **Embedded Graphics**: Developing rich user interfaces on microcontrollers using Qt, LVGL, or Nuklear.
+- **Multimedia IoT Devices**: Implementing VoIP phones using PJSIP or graphical interfaces using Qt on microcontrollers like the STM32F7.
+- **Industrial Automation and Robotics**: Running complex control logic and computer vision tasks via OpenCV while maintaining real-time responsiveness for motor and sensor control.
+- **Legacy Software Porting**: Transitioning existing Linux-based applications to cheaper, lower-power embedded hardware with minimal code changes due to POSIX compliance.
+- **Secure Embedded Systems**: Creating fixed-function devices where the attack surface is minimized by excluding all unnecessary code and services at the build level.
 
 ### Getting Started
 
-To get started with Embox, developers should first set up a cross-compilation environment for their target architecture (e.g., `gcc-arm-none-eabi`). The build process begins by cloning the repository and selecting a configuration template using the `./confset <template>` command or `make confload-<template>`. For example, to target the x86 QEMU emulator, use `./confset x86/qemu`. After configuration, running `make` generates the system image. 
-
-For rapid testing, the provided `./scripts/qemu/auto_qemu` script can launch the image in QEMU with networking enabled. Developers can interact with the system via a Unix-like shell and use GDB for debugging by passing specific flags to the QEMU script. Detailed technical guides and porting instructions are available in the [Embox Wiki](https://github.com/embox/embox/wiki).
+To begin developing with Embox, you must first set up a cross-compilation environment for your target architecture (e.g., arm-none-eabi-gcc for STM32). The build process involves selecting a configuration template using the `make confload-<template>` command, which populates the `./conf` directory with the necessary module definitions. Once configured, running `make` generates the system image. For rapid testing, developers can use the `x86/qemu` template to run Embox within a virtualized environment using the provided `./scripts/qemu/auto_qemu` script. Detailed guides for specific platforms and advanced features like Docker-based builds (Emdocker) are available in the [official Wiki](https://github.com/embox/embox/wiki).
