@@ -8,9 +8,9 @@ summary: Apache NuttX is a highly scalable, standards-compliant real-time operat
   footprint and modular architecture.
 codeUrl: https://github.com/apache/nuttx
 siteUrl: https://nuttx.apache.org/
-star: 3604
-version: nuttx-12.11.0
-lastUpdated: '2025-08-11'
+star: 3610
+version: nuttx-12.12.0-RC0
+lastUpdated: '2025-09-03'
 components:
 - Shell
 - FileSystem
@@ -74,7 +74,7 @@ libraries:
 - uClibc++
 - OP-TEE
 createdAt: '2025-08-11'
-updatedAt: '2025-08-11'
+updatedAt: '2025-12-29'
 ---
 
 ### Features

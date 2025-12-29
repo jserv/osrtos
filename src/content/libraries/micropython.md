@@ -8,7 +8,7 @@ summary: MicroPython is a lean and efficient implementation of the Python 3 prog
   to write high-level code for hardware with as little as 16kiB of RAM.
 codeUrl: https://github.com/micropython/micropython
 siteUrl: http://micropython.org/
-star: 21252
+star: 21263
 version: v1.27.0
 lastUpdated: '2025-12-11'
 components:
@@ -44,7 +44,7 @@ licenses:
 - MIT
 libraryType: Language
 createdAt: '2025-12-11'
-updatedAt: '2025-12-11'
+updatedAt: '2025-12-29'
 ---
 
 ### Features
