@@ -1,76 +1,60 @@
 ---
-title: Lemon IoT LTE nRF9160
-summary: A comprehensive support repository for the Lemon IoT LTE nRF9160 board, featuring
-  board definitions, schematics, and example applications. It utilizes the Zephyr
-  RTOS and Nordic nRF Connect SDK to enable low-power LTE-M, NB-IoT, and GNSS connectivity.
+title: Lemon IoT LTE nRF9160 Board Support
+summary: Official support files and examples for the Lemon IoT LTE nRF9160 board,
+  powered by the Nordic nRF9160 SiP. It includes Zephyr RTOS board definitions, device
+  tree configurations, and sample applications for cellular IoT development.
+slug: lemon-iot-lte-nrf9160
 codeUrl: https://github.com/aaron-mohtar-co/Lemon-IoT-LTE-nRF9160
 siteUrl: https://lemon-iot.com/index.php/product/lemon-iot-lte-cat-m1-nb-iot-nrf9160-board/
-isShow: true
-image: /images/202512/lemon_iot_lte_nrf9160_diagram.webp
+star: 4
+lastUpdated: '2024-03-30'
 rtos: zephyr
-libraries: []
 topics:
 - cat-m1
-- nrf9160
 - cat-nb1
-- devicetree
 - device-tree-overlay
+- devicetree
 - i2c
-- shtc3
-- spi
-- zephyr
 - iot
 - iot-platform
 - lemon-iot
-lastUpdated: '2025-12-27'
+- nrf9160
+- shtc3
+- spi
+- zephyr
+isShow: false
 createdAt: '2025-12-27'
-updatedAt: '2025-12-27'
-star: 4
+updatedAt: '2025-12-29'
 ---
 
-The Lemon IoT LTE nRF9160 board is a versatile development platform designed for low-power cellular IoT applications. At its heart lies the Nordic Semiconductor nRF9160 System-in-Package (SiP), which integrates an ARM Cortex-M33 application processor with a full LTE-M/NB-IoT modem and GNSS capabilities. This repository serves as the central hub for developers looking to leverage the Lemon IoT hardware within the Zephyr RTOS ecosystem.
+The Lemon IoT LTE nRF9160 is a specialized development platform designed for low-power cellular IoT applications. At its core is the Nordic Semiconductor nRF9160 System-in-Package (SiP), which integrates an ARM Cortex-M33 application processor with a full LTE-M/NB-IoT modem and GNSS capabilities. This repository serves as the central hub for board support files, documentation, and example projects required to develop firmware for the hardware using the Zephyr RTOS and the nRF Connect SDK.
 
-## Getting Started with Zephyr and nRF Connect SDK
+### Hardware and Connectivity
 
-To begin developing for the Lemon IoT LTE board, you first need to integrate the provided board files into your Zephyr environment. These files define the hardware mapping and device tree configurations necessary for the nRF Connect SDK to recognize the board. 
+The board is built around the nRF9160, making it a powerful choice for asset tracking, smart city infrastructure, and industrial IoT. By leveraging the integrated modem, developers can connect devices to cellular networks globally using power-efficient protocols. The board design exposes various peripherals, including GPIOs, I2C, SPI, and UART, allowing for extensive sensor integration.
 
-Developers should download the files from the `Zephyr board files` directory and place them in the appropriate SDK path (typically `\Nordic\<SDK version>\zephyr\boards\arm`). The repository supports two primary targets:
-- **Lemon IoT NRF9160**: For standard applications.
-- **Lemon IoT NRF9160 non-secure**: For applications utilizing the TrustZone-M non-secure environment.
+### Zephyr RTOS Integration
 
-## Flexible I/O and Peripheral Configuration
+To facilitate development, the project provides dedicated board definition files for the Zephyr RTOS. These files define the hardware layout, including the device tree (DTS) and pin multiplexing. Users can target two specific configurations:
 
-The nRF9160 SiP features four serial communication peripherals that can be dynamically configured as I2C (TWI), SPI, or UART. By default, the Lemon IoT board allocates the first peripheral (`&uart0`) for serial communication. 
+- **Lemon IoT NRF9160**: The standard target for secure applications.
+- **Lemon IoT NRF9160 non-secure**: Used for applications running in the non-secure partition, which is common when utilizing the nRF9160's TrustZone features.
 
-To maintain flexibility, the project encourages the use of DeviceTree overlays to add additional buses like I2C or SPI. This approach allows developers to allocate pins based on their specific project requirements without modifying the base board definition. For instance, adding an I2C sensor would typically involve allocating `&i2c1` to avoid conflicts with the primary UART.
+The repository includes instructions on how to integrate these board files into the nRF Connect SDK environment, ensuring that the hardware is correctly recognized during the build process.
 
-## Programming and Bootloaders
+### Peripheral Configuration and Flexibility
 
-For developers who do not have access to an external ARM programmer like a Segger J-Link or a Nordic Development Kit, the Lemon IoT board comes pre-installed with a serial bootloader. This allows for firmware updates over a simple serial connection. The repository includes the `newtmgr` tool from the Apache Mynewt project, which is the standard utility for interacting with the management layer of the bootloader to upload new images.
+One of the strengths of the nRF9160 is its flexible serial communication peripherals. The Lemon IoT board pre-allocates the first serial peripheral to UART (`&uart0`). However, the system allows for additional buses like I2C or SPI to be added dynamically using DeviceTree overlays. This approach gives developers the flexibility to allocate I/O pins based on their specific project requirements without modifying the core board files.
 
-## Practical Examples
+### Programming and Bootloading
 
-To jumpstart development, the repository includes several well-documented examples:
+For developers who do not have access to dedicated ARM programmers like a Segger J-Link or a Nordic Development Kit, the board comes with a pre-installed serial bootloader. This allows for firmware updates and programming over a standard serial connection, significantly lowering the barrier to entry for new developers. Information regarding the bootloader configuration and usage is provided within the project structure.
 
-- **Fade RGB LED**: A simple demonstration of PWM control to cycle colors on the onboard RGB LED.
-- **I2C Sensor**: Shows how to interface with an SHTC3 temperature and humidity sensor using DeviceTree overlays.
-- **SPI Sensor**: Demonstrates communication with an ADXL345 accelerometer over the SPI bus.
+### Examples and Getting Started
 
-### Example CMake Configuration
+The repository includes several practical examples to help users get up and running quickly. These include:
 
-Most examples follow a standard Zephyr project structure. Here is a look at a typical `CMakeLists.txt` used in the project:
+- **I2C Sensor Example**: Demonstrates how to interface with external sensors using the I2C protocol.
+- **SPI Sensor Example**: Shows the configuration and usage of the SPI bus for high-speed peripheral communication.
 
-```cmake
-# SPDX-License-Identifier: Apache-2.0
-cmake_minimum_required(VERSION 3.20.0)
-
-find_package(Zephyr REQUIRED HINTS $ENV{ZEPHYR_BASE})
-project(shtc3)
-
-FILE(GLOB app_sources src/*.c)
-target_sources(app PRIVATE ${app_sources})
-```
-
-## Hardware Documentation
-
-Beyond software, the repository provides full transparency into the hardware design. The `Schematics` folder contains detailed PDF drawings of the board layout and circuitry, ensuring that engineers have the necessary information to integrate the Lemon IoT module into larger systems or custom enclosures.
+Beyond these specific examples, the board is fully compatible with the extensive library of samples provided by both the Zephyr Project and the Nordic nRF Connect SDK, covering everything from basic GPIO toggling to complex cloud connectivity via MQTT or CoAP.
