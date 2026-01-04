@@ -8,7 +8,7 @@ summary: Eclipse ThreadX is an industrial-grade real-time operating system (RTOS
 slug: threadx
 codeUrl: https://github.com/eclipse-threadx/threadx
 siteUrl: https://threadx.io/
-star: 3327
+star: 3328
 version: v6.4.3.202503_rel
 lastUpdated: '2025-09-28'
 components:
@@ -54,7 +54,7 @@ libraries:
 - TraceX
 - OpenAMP
 createdAt: '2025-09-28'
-updatedAt: '2025-12-29'
+updatedAt: '2026-01-04'
 ---
 
 ### Features

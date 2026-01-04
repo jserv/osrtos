@@ -8,14 +8,14 @@ summary: Libwebsockets (LWS) is a lightweight, high-performance C networking lib
 slug: warmcat-libwebsockets
 codeUrl: https://github.com/warmcat/libwebsockets
 siteUrl: https://libwebsockets.org
-star: 5164
+star: 5166
 version: valgrind-clean
-lastUpdated: '2025-12-29'
+lastUpdated: '2025-12-30'
 licenses:
 - MIT
 libraryType: Network
 createdAt: '2025-12-30'
-updatedAt: '2025-12-30'
+updatedAt: '2026-01-04'
 ---
 
 ### Features

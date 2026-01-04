@@ -9,7 +9,7 @@ codeUrl: https://github.com/stateos/IntrOS
 siteUrl: https://github.com/stateos/IntrOS
 star: 41
 version: v5.0
-lastUpdated: '2025-12-23'
+lastUpdated: '2026-01-02'
 platforms:
 - ARM Cortex-M
 - ARM Cortex-M0
@@ -21,7 +21,7 @@ platforms:
 licenses:
 - MIT
 createdAt: '2025-12-23'
-updatedAt: '2025-12-23'
+updatedAt: '2026-01-04'
 ---
 
 ### Features

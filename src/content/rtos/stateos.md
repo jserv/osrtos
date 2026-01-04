@@ -10,7 +10,7 @@ codeUrl: https://github.com/stateos/StateOS
 siteUrl: https://github.com/stateos/StateOS
 star: 203
 version: v7.0
-lastUpdated: '2025-12-23'
+lastUpdated: '2026-01-02'
 platforms:
 - ARM Cortex-M
 - STM8
@@ -19,7 +19,7 @@ licenses:
 libraries:
 - common
 createdAt: '2025-12-23'
-updatedAt: '2025-12-23'
+updatedAt: '2026-01-04'
 ---
 
 ### Features
