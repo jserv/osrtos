@@ -21,7 +21,7 @@ const allProjects = await getCollection('projects');
 const relatedProjects = allProjects.filter(p => p.data.rtos === entry.data.slug);
 ---
 
-<Layout title={`${entry.data.title} - RTOS Showcase`} description={entry.data.summary}>
+<Layout title={`${entry.data.title} - Open Source RTOS`} description={entry.data.summary}>
   <article class="max-w-full">
     <div class="flex items-center gap-4 mb-8 flex-wrap">
       <h1 class="text-4xl md:text-5xl font-extrabold m-0 text-gray-800 dark:text-gray-200">
