@@ -8,7 +8,7 @@ summary: RTIC (Real-Time Interrupt-driven Concurrency) is a hardware-accelerated
   execution and data race free memory sharing.
 codeUrl: https://github.com/rtic-rs/rtic
 siteUrl: https://rtic.rs/
-star: 2203
+star: 2205
 version: v2.2.0
 lastUpdated: '2025-12-15'
 platforms:
@@ -20,7 +20,7 @@ licenses:
 - Apache-2.0
 - MIT
 createdAt: '2025-12-15'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-05'
 ---
 
 ### Features

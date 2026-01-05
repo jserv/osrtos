@@ -8,7 +8,7 @@ summary: FreeRTOS is a market-leading real-time operating system kernel designed
   including ARM and RISC-V.
 codeUrl: https://github.com/FreeRTOS/FreeRTOS
 siteUrl: http://www.freertos.org/
-star: 6816
+star: 6820
 version: '202411.00'
 lastUpdated: '2026-01-01'
 components:
@@ -69,7 +69,7 @@ libraries:
 - WolfSSL
 - Percepio Tracealyzer
 createdAt: '2025-12-22'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-05'
 ---
 
 ### Features

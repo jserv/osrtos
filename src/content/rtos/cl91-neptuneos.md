@@ -9,7 +9,7 @@ slug: cl91-neptuneos
 codeUrl: https://github.com/cl91/NeptuneOS
 star: 422
 version: v0.3.0003
-lastUpdated: '2025-12-29'
+lastUpdated: '2026-01-05'
 components:
 - Scheduler
 - Memory Management
@@ -44,7 +44,7 @@ libraries:
 - Open Fabrics Alliance NVMe
 - LKL
 createdAt: '2025-12-31'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-05'
 ---
 
 ### Features
