@@ -30,9 +30,16 @@ const libraryEntries = await Promise.all(
 <Layout title={`${entry.data.title} - Open Source Embedded Project`} description={entry.data.summary}>
   <article class="max-w-full">
     <div class="breadcrumb mb-8">
-      <a href="/">Home</a> / <a href="/rtos">RTOS</a> /
-      {rtosEntry && <a href={`/rtos/${rtosEntry.data.slug}`}>{rtosEntry.data.title}</a>} /
-      <span>{entry.data.title}</span>
+      <div class="breadcrumb-path">
+        <a href="/">Home</a> / <a href="/rtos/">RTOS</a> /
+        {rtosEntry && <a href={`/rtos/${rtosEntry.data.slug}/`}>{rtosEntry.data.title}</a>} /
+        <span>{entry.data.title}</span>
+      </div>
+      {entry.data.createdAt && (
+        <div class="breadcrumb-date">
+          Published: {new Date(entry.data.createdAt).toLocaleDateString('en-US', { year: 'numeric', month: 'long', day: 'numeric' })}
+        </div>
+      )}
     </div>
 
     <h1 class="text-4xl md:text-5xl font-extrabold m-0 mb-8 text-gray-800 dark:text-gray-200">
@@ -68,8 +75,24 @@ const libraryEntries = await Promise.all(
 
 <style>
     .breadcrumb {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        flex-wrap: wrap;
+        gap: 0.5rem;
         color: #6b7280;
         font-size: 0.9rem;
+    }
+
+    .breadcrumb-path {
+        flex: 1;
+        min-width: fit-content;
+    }
+
+    .breadcrumb-date {
+        color: #6b7280;
+        font-size: 0.85rem;
+        font-style: italic;
     }
 
     .breadcrumb a {
