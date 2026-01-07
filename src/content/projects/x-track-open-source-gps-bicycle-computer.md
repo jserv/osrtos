@@ -23,6 +23,7 @@ topics:
 - offline-maps
 - speedometer
 isShow: true
+image: /202601/x-track.webp
 createdAt: '2026-01-04'
 updatedAt: '2026-01-04'
 ---
