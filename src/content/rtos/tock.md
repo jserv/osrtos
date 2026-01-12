@@ -8,9 +8,9 @@ summary: Tock is a secure, concurrent embedded operating system designed for ARM
   on resource-constrained hardware with as little as 64kB of RAM.
 codeUrl: https://github.com/tock/tock
 siteUrl: https://github.com/tock/tock
-star: 6166
+star: 6173
 version: release-2.2
-lastUpdated: '2026-01-04'
+lastUpdated: '2026-01-10'
 components:
 - IPC
 - Storage
@@ -29,7 +29,7 @@ licenses:
 - Apache-2.0
 - MIT
 createdAt: '2025-12-18'
-updatedAt: '2026-01-05'
+updatedAt: '2026-01-12'
 ---
 
 ### Features

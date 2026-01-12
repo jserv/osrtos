@@ -8,7 +8,7 @@ summary: StateOS is a high-performance, lightweight real-time operating system d
   footprint suitable for 8-bit and 32-bit architectures.
 codeUrl: https://github.com/stateos/StateOS
 siteUrl: https://github.com/stateos/StateOS
-star: 203
+star: 205
 version: v7.0
 lastUpdated: '2026-01-02'
 platforms:
@@ -19,7 +19,7 @@ licenses:
 libraries:
 - common
 createdAt: '2025-12-23'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-12'
 ---
 
 ### Features

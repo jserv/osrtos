@@ -8,7 +8,7 @@ summary: µGUI is a lightweight, platform-independent graphic library designed s
   display technologies.
 codeUrl: https://github.com/achimdoebler/UGUI
 siteUrl: https://github.com/achimdoebler/UGUI
-star: 1337
+star: 1340
 lastUpdated: '2016-01-02'
 components:
 - GUI
@@ -29,7 +29,7 @@ licenses:
 - Unknown
 libraryType: GUI
 createdAt: '2016-01-02'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-12'
 ---
 
 ### Features

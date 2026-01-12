@@ -7,7 +7,7 @@ summary: IntrOS is a lightweight, cooperative operating system designed for deep
   mechanisms while maintaining a small footprint suitable for 8-bit to 32-bit microcontrollers.
 codeUrl: https://github.com/stateos/IntrOS
 siteUrl: https://github.com/stateos/IntrOS
-star: 41
+star: 42
 version: v5.0
 lastUpdated: '2026-01-02'
 platforms:
@@ -21,7 +21,7 @@ platforms:
 licenses:
 - MIT
 createdAt: '2025-12-23'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-12'
 ---
 
 ### Features
