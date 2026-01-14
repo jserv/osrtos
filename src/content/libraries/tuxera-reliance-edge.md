@@ -8,7 +8,7 @@ summary: Reliance Edge is a small, portable, and power-fail safe file system des
 slug: tuxera-reliance-edge
 codeUrl: https://github.com/tuxera/reliance-edge
 siteUrl: https://www.tuxera.com/products/tuxera-edge-fs/
-star: 117
+star: 118
 version: v2.6
 lastUpdated: '2025-11-11'
 licenses:
@@ -16,7 +16,7 @@ licenses:
 - Commercial
 libraryType: FileSystem
 createdAt: '2026-01-04'
-updatedAt: '2026-01-04'
+updatedAt: '2026-01-14'
 ---
 
 ### Features

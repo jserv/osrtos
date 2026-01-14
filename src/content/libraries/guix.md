@@ -7,9 +7,9 @@ summary: Eclipse ThreadX GUIX is a high-performance, small-footprint graphical u
   design tool that automates C code generation for graphical elements, ensuring rapid
   development and deployment on resource-constrained hardware.
 codeUrl: https://github.com/eclipse-threadx/guix
-star: 387
-version: v6.4.3.202503_rel
-lastUpdated: '2025-09-29'
+star: 391
+version: v6.4.5.202504_rel
+lastUpdated: '2026-01-13'
 components:
 - GUI
 - Graphics
@@ -38,7 +38,7 @@ licenses:
 - MIT
 libraryType: GUI
 createdAt: '2025-09-29'
-updatedAt: '2026-01-12'
+updatedAt: '2026-01-14'
 ---
 
 ### Features

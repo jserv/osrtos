@@ -6,7 +6,7 @@ codeUrl: https://github.com/apache/mynewt-core
 siteUrl: https://mynewt.apache.org/
 date: '2016-11-29'
 lastUpdated: '2025-11-27'
-star: 875
+star: 877
 components:
 - BLE
 - LoRaWAN
@@ -26,7 +26,7 @@ summary: Apache Mynewt OS is a real-time, modular operating system for connected
   constraints. It provides a complete environment for prototyping, developing, and
   managing em
 createdAt: '2025-12-19'
-updatedAt: '2026-01-12'
+updatedAt: '2026-01-14'
 ---
 
 ### Features
