@@ -10,7 +10,7 @@ codeUrl: https://github.com/cesanta/mongoose-os
 siteUrl: https://mongoose-os.com/
 star: 2613
 version: 2.20.0
-lastUpdated: '2026-01-05'
+lastUpdated: '2026-01-15'
 components:
 - OTA
 - Cryptography
@@ -59,7 +59,7 @@ libraries:
 - mJS
 - Frozen
 createdAt: '2025-12-24'
-updatedAt: '2026-01-05'
+updatedAt: '2026-01-16'
 ---
 
 ### Features

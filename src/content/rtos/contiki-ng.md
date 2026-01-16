@@ -9,7 +9,7 @@ codeUrl: https://github.com/contiki-ng/contiki-ng
 siteUrl: https://github.com/contiki-ng/contiki-ng
 star: 1468
 version: release/v5.1
-lastUpdated: '2026-01-09'
+lastUpdated: '2026-01-14'
 components:
 - Scheduler
 - Memory Management
@@ -48,7 +48,7 @@ libraries:
 - mbedTLS
 - CBOR
 createdAt: '2025-12-04'
-updatedAt: '2026-01-14'
+updatedAt: '2026-01-16'
 ---
 
 ### Features
