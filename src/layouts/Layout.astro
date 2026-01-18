@@ -5,14 +5,16 @@ import ThemeToggle from '../components/ThemeToggle.astro';
 interface Props {
   title?: string;
   description?: string;
+  canonicalUrl?: string;
 }
 
 const {
   title = 'OSRTOS - Top Open Source Real-Time Operating Systems (RTOS)',
-  description = 'List of open source real-time operating systems. Dive deep into features, comparisons, and use-cases to choose the perfect real-time operating system for your project. Stay updated with the latest in the RTOS world.'
+  description = 'List of open source real-time operating systems. Dive deep into features, comparisons, and use-cases to choose the perfect real-time operating system for your project. Stay updated with the latest in the RTOS world.',
+  canonicalUrl
 } = Astro.props;
 
-const canonicalURL = new URL(Astro.url.pathname, Astro.site);
+const canonicalURL = canonicalUrl || new URL(Astro.url.pathname, Astro.site).href;
 
 ---
 
@@ -25,7 +27,7 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   <meta name="description" content={description}/>
   <title>{title}</title>
   <link rel="sitemap" href="/sitemap-index.xml" />
-  <link rel="canonical" href={canonicalURL.href} />
+  <link rel="canonical" href={canonicalURL} />
 
   <!-- Initialize theme before render to prevent flash -->
   <script is:inline>
@@ -58,6 +60,8 @@ const canonicalURL = new URL(Astro.url.pathname, Astro.site);
   </script>
   <script async src="https://pagead2.googlesyndication.com/pagead/js/adsbygoogle.js?client=ca-pub-8746842714024895"
      crossorigin="anonymous"></script>
+
+  <slot name="head" />
 </head>
 <body class="bg-white dark:bg-gray-900 text-gray-900 dark:text-gray-100 transition-colors">
 <header class="bg-gray-800 dark:bg-gray-900 text-white shadow-md sticky top-0 z-50 w-full">

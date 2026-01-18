@@ -1,0 +1,191 @@
+---
+import { getCollection } from 'astro:content';
+import Layout from '../../../layouts/Layout.astro';
+import ProjectsListHorizontal from '../../../components/ProjectsListHorizontal.astro';
+import Pagination from '../../../components/Pagination.astro';
+
+export async function getStaticPaths() {
+  const PROJECTS_PER_PAGE = 12;
+
+  const allProjects = await getCollection('projects');
+  const allRtos = await getCollection('rtos');
+  const allLibraries = await getCollection('libraries');
+
+  // Create lookup maps for validation
+  const rtosMap = new Set(allRtos.map(r => r.data.slug));
+  const libraryMap = new Set(allLibraries.map(l => l.data.slug));
+
+  const paths: any[] = [];
+
+  // Generate paths for RTOS
+  for (const rtos of allRtos) {
+    // Only include projects that reference this RTOS, where the RTOS exists
+    const filteredProjects = allProjects
+      .filter(
+        (p) => p.data.rtos === rtos.data.slug && rtosMap.has(p.data.rtos)
+      )
+      .sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf());
+
+    if (filteredProjects.length === 0) continue;
+
+    const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
+
+    // Generate page 1 (no page number in URL)
+    paths.push({
+      params: { slug: rtos.data.slug, page: undefined },
+      props: {
+        type: 'rtos',
+        entry: rtos,
+        projects: filteredProjects,
+        currentPage: 1,
+        totalPages,
+      },
+    });
+
+    // Generate pages 2+
+    for (let i = 2; i <= totalPages; i++) {
+      paths.push({
+        params: { slug: rtos.data.slug, page: i.toString() },
+        props: {
+          type: 'rtos',
+          entry: rtos,
+          projects: filteredProjects,
+          currentPage: i,
+          totalPages,
+        },
+      });
+    }
+  }
+
+  // Generate paths for Libraries
+  for (const library of allLibraries) {
+    // Only include projects that reference this library, where the library exists
+    const filteredProjects = allProjects
+      .filter((p) =>
+        p.data.libraries.includes(library.data.slug) &&
+        libraryMap.has(library.data.slug)
+      )
+      .sort((a, b) => b.data.createdAt.valueOf() - a.data.createdAt.valueOf());
+
+    if (filteredProjects.length === 0) continue;
+
+    const totalPages = Math.ceil(filteredProjects.length / PROJECTS_PER_PAGE);
+
+    // Generate page 1 (no page number in URL)
+    paths.push({
+      params: { slug: library.data.slug, page: undefined },
+      props: {
+        type: 'library',
+        entry: library,
+        projects: filteredProjects,
+        currentPage: 1,
+        totalPages,
+      },
+    });
+
+    // Generate pages 2+
+    for (let i = 2; i <= totalPages; i++) {
+      paths.push({
+        params: { slug: library.data.slug, page: i.toString() },
+        props: {
+          type: 'library',
+          entry: library,
+          projects: filteredProjects,
+          currentPage: i,
+          totalPages,
+        },
+      });
+    }
+  }
+
+  return paths;
+}
+
+const { type, entry, projects, currentPage, totalPages } = Astro.props;
+
+// Paginate projects (already sorted by createdAt in getStaticPaths)
+const PROJECTS_PER_PAGE = 12;
+const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
+const endIndex = startIndex + PROJECTS_PER_PAGE;
+const paginatedProjects = projects.slice(startIndex, endIndex);
+
+// Generate URLs for SEO
+const baseUrl = `/projects/${entry.data.slug}`;
+const canonicalUrl = `https://osrtos.com${baseUrl}/`;
+const currentUrl = currentPage === 1 ? canonicalUrl : `${canonicalUrl}${currentPage}/`;
+const prevUrl = currentPage > 1
+  ?`${canonicalUrl}${currentPage - 1}/`
+  : null;
+const nextUrl = currentPage < totalPages ? `${canonicalUrl}${currentPage + 1}/` : null;
+
+const pageTitle = `${entry.data.title} Projects${currentPage > 1 ? ` - Page ${currentPage}` : ''}`;
+const pageDescription = `Browse ${projects.length} embedded systems projects using ${entry.data.title}${type === 'rtos' ? ' RTOS' : ' library'}. Discover real-world applications, code examples, and open source implementations.`;
+---
+
+<Layout title={pageTitle} description={pageDescription} canonicalUrl={canonicalUrl}>
+  <Fragment slot="head">
+    <!-- Pagination links for SEO -->
+    {prevUrl && <link rel="prev" href={prevUrl} />}
+    {nextUrl && <link rel="next" href={nextUrl} />}
+
+    <!-- Open Graph -->
+    <meta property="og:title" content={pageTitle} />
+    <meta property="og:description" content={pageDescription} />
+    <meta property="og:url" content={currentUrl} />
+    <meta property="og:type" content="website" />
+
+    <!-- Twitter Card -->
+    <meta name="twitter:card" content="summary" />
+    <meta name="twitter:title" content={pageTitle} />
+    <meta name="twitter:description" content={pageDescription} />
+  </Fragment>
+
+  <div class="max-w-7xl mx-auto px-4 py-8">
+    <!-- Breadcrumb -->
+    <nav class="mb-8" aria-label="Breadcrumb">
+      <ol class="flex list-none p-0 m-0 gap-2 flex-wrap">
+        <li class="flex items-center">
+          <a href="/" class="text-primary-600 dark:text-primary-400 no-underline hover:underline">Home</a>
+          <span class="ml-2 text-gray-400 dark:text-gray-500">›</span>
+        </li>
+        <li class="flex items-center">
+          <a href="/projects/" class="text-primary-600 dark:text-primary-400 no-underline hover:underline">Projects</a>
+          <span class="ml-2 text-gray-400 dark:text-gray-500">›</span>
+        </li>
+        <li class="flex items-center">
+          <a href={type === 'rtos' ? `/rtos/${entry.data.slug}` : `/library/${entry.data.slug}`}
+             class="text-primary-600 dark:text-primary-400 no-underline hover:underline">
+            {entry.data.title}
+          </a>
+        </li>
+      </ol>
+    </nav>
+
+    <!-- Header -->
+    <header class="mb-12 text-center">
+      <h1 class="text-4xl md:text-5xl font-bold text-gray-900 dark:text-gray-100 mb-2">{entry.data.title} Projects</h1>
+      <p class="text-lg text-gray-600 dark:text-gray-400 mb-4">
+        {projects.length} {projects.length === 1 ? 'project' : 'projects'} using{' '}
+        <a href={type === 'rtos' ? `/rtos/${entry.data.slug}/` : `/library/${entry.data.slug}/`}
+           class="text-primary-600 dark:text-primary-400 no-underline font-medium hover:underline">
+          {entry.data.title}
+        </a>
+        {type === 'rtos' && ' RTOS'}
+      </p>
+
+      {entry.data.summary && (
+        <p class="max-w-3xl mx-auto mt-4 text-gray-700 dark:text-gray-300 leading-relaxed">{entry.data.summary}</p>
+      )}
+    </header>
+
+    <!-- Projects List -->
+    <ProjectsListHorizontal projects={paginatedProjects} />
+
+    <!-- Pagination -->
+    <Pagination
+      currentPage={currentPage}
+      totalPages={totalPages}
+      baseUrl={baseUrl}
+    />
+  </div>
+</Layout>

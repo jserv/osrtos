@@ -4,6 +4,7 @@ import Layout from '../../layouts/Layout.astro';
 import MetadataDisplay from '../../components/MetadataDisplay.astro';
 import ProjectsList from '../../components/ProjectsList.astro';
 import '../../styles/prose.css';
+import ProjectsListHorizontal from "../../components/ProjectsListHorizontal.astro";
 
 export async function getStaticPaths() {
   const rtos = await getCollection('rtos');
@@ -16,9 +17,14 @@ export async function getStaticPaths() {
 const {entry} = Astro.props;
 const {Content} = await render(entry);
 
-// Find related projects
+// Find related projects (order by isShow first, then by creation time)
 const allProjects = await getCollection('projects');
-const relatedProjects = allProjects.filter(p => p.data.rtos === entry.data.slug);
+const relatedProjects = allProjects
+  .filter(p => p.data.rtos === entry.data.slug)
+  .sort((a, b) => {
+    return b.data.createdAt.valueOf() - a.data.createdAt.valueOf();
+  });
+const displayedProjects = relatedProjects.slice(0, 8); // Show first 9 projects
 ---
 
 <Layout title={`${entry.data.title} - Open Source RTOS`} description={entry.data.summary}>
@@ -67,10 +73,26 @@ const relatedProjects = allProjects.filter(p => p.data.rtos === entry.data.slug)
 
     {relatedProjects.length > 0 && (
        <section class="mt-16 pt-12 border-t-2 border-gray-200 dark:border-gray-700">
-         <h2 class="text-3xl font-bold m-0 mb-8 text-gray-800 dark:text-gray-100">
-           Related Projects ({relatedProjects.length})
-         </h2>
-         <ProjectsList projects={relatedProjects}/>
+         <div class="flex items-center justify-between mb-8">
+           <h2 class="text-3xl font-bold m-0 text-gray-800 dark:text-gray-100">
+             Related Projects
+           </h2>
+           {relatedProjects.length > 8 && (
+             <a href={`/projects/${entry.data.slug}/`}
+                class="text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 no-underline font-semibold text-base transition-colors">
+               View All Projects →
+             </a>
+           )}
+         </div>
+         <ProjectsListHorizontal projects={displayedProjects}/>
+         {relatedProjects.length > 8 && (
+           <div class="text-center mt-8">
+             <a href={`/projects/${entry.data.slug}/`}
+                class="inline-block px-6 py-3 bg-gray-100 dark:bg-gray-700 text-primary-600 dark:text-primary-400 hover:text-primary-700 dark:hover:text-primary-300 no-underline rounded-lg font-semibold transition-colors hover:bg-grey-700 dark:hover:bg-grey-600">
+               View All Projects
+             </a>
+           </div>
+         )}
        </section>
     )}
   </article>

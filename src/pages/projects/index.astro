@@ -1,7 +1,8 @@
 ---
 import {getCollection} from 'astro:content';
 import Layout from '../../layouts/Layout.astro';
-import ProjectsList from '../../components/ProjectsList.astro';
+import ProjectsListHorizontal from '../../components/ProjectsListHorizontal.astro';
+import ProjectsList from "../../components/ProjectsList.astro";
 
 const allProjects = await getCollection('projects');
 

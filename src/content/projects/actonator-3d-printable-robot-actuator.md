@@ -14,7 +14,8 @@ topics:
 - foc
 - robotics
 - stm32
-isShow: false
+isShow: true
+image: /202601/actonator.webp
 createdAt: '2026-01-17'
 updatedAt: '2026-01-17'
 ---
