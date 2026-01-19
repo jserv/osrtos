@@ -1,11 +1,11 @@
 ---
 import { getCollection } from 'astro:content';
 import Layout from '../../../layouts/Layout.astro';
-import ProjectsListHorizontal from '../../../components/ProjectsListHorizontal.astro';
 import Pagination from '../../../components/Pagination.astro';
+import ProjectsList from '../../../components/ProjectsList.astro';
 
 export async function getStaticPaths() {
-  const PROJECTS_PER_PAGE = 12;
+  const PROJECTS_PER_PAGE = 36;
 
   const allProjects = await getCollection('projects');
   const allRtos = await getCollection('rtos');
@@ -104,7 +104,7 @@ export async function getStaticPaths() {
 const { type, entry, projects, currentPage, totalPages } = Astro.props;
 
 // Paginate projects (already sorted by createdAt in getStaticPaths)
-const PROJECTS_PER_PAGE = 12;
+const PROJECTS_PER_PAGE = 36;
 const startIndex = (currentPage - 1) * PROJECTS_PER_PAGE;
 const endIndex = startIndex + PROJECTS_PER_PAGE;
 const paginatedProjects = projects.slice(startIndex, endIndex);
@@ -179,7 +179,7 @@ const pageDescription = `Browse ${projects.length} embedded systems projects usi
     </header>
 
     <!-- Projects List -->
-    <ProjectsListHorizontal projects={paginatedProjects} />
+    <ProjectsList projects={paginatedProjects} isHorizontal={true} />
 
     <!-- Pagination -->
     <Pagination

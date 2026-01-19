@@ -4,7 +4,6 @@ import Layout from '../../layouts/Layout.astro';
 import LibraryMetadataDisplay from '../../components/LibraryMetadataDisplay.astro';
 import ProjectsList from '../../components/ProjectsList.astro';
 import '../../styles/prose.css';
-import ProjectsListHorizontal from "../../components/ProjectsListHorizontal.astro";
 
 export async function getStaticPaths() {
   const libraries = await getCollection('libraries');
@@ -85,7 +84,7 @@ const displayedProjects = relatedProjects.slice(0, 8); // Show first 9 projects
              </a>
            )}
          </div>
-         <ProjectsListHorizontal projects={displayedProjects}/>
+         <ProjectsList projects={displayedProjects} isHorizontal={true} />
          {relatedProjects.length > 8 && (
            <div class="text-center mt-8">
              <a href={`/projects/${entry.data.slug}/`}
