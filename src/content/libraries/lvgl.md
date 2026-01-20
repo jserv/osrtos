@@ -7,9 +7,9 @@ summary: LVGL is a lightweight, open-source C graphics library designed to build
   like anti-aliasing, animations, and complex layout engines.
 codeUrl: https://github.com/lvgl/lvgl
 siteUrl: https://lvgl.io/
-star: 22493
+star: 22530
 version: v9.4.0
-lastUpdated: '2026-01-15'
+lastUpdated: '2026-01-20'
 components:
 - GUI
 - Graphics
@@ -31,7 +31,7 @@ licenses:
 - MIT
 libraryType: GUI
 createdAt: '2025-12-25'
-updatedAt: '2026-01-16'
+updatedAt: '2026-01-20'
 ---
 
 ### Features

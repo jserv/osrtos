@@ -9,8 +9,8 @@ summary: OpenBLT is a highly customizable, open-source bootloader designed for 8
 codeUrl: https://github.com/feaser/openblt
 siteUrl: https://www.feaser.com
 star: 841
-version: openblt_v012100
-lastUpdated: '2026-01-07'
+version: openblt_v012101
+lastUpdated: '2026-01-17'
 components:
 - Bootloader
 - GUI
@@ -38,7 +38,7 @@ licenses:
 - GPL-3.0
 libraryType: Bootloader
 createdAt: '2025-12-23'
-updatedAt: '2026-01-16'
+updatedAt: '2026-01-20'
 ---
 
 ### Features
