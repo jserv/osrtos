@@ -10,7 +10,7 @@ codeUrl: https://github.com/RIOT-OS/RIOT
 siteUrl: http://riot-os.org/
 star: 5666
 version: '2025.10'
-lastUpdated: '2026-01-21'
+lastUpdated: '2026-01-22'
 components:
 - FileSystem
 - Network
@@ -54,7 +54,7 @@ libraries:
 - MicroPython
 - WebAssembly
 createdAt: '2025-12-24'
-updatedAt: '2026-01-22'
+updatedAt: '2026-01-23'
 ---
 
 ### Features

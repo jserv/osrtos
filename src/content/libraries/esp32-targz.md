@@ -9,8 +9,8 @@ summary: ESP32-targz is a comprehensive Arduino-compatible library for ESP32, ES
 codeUrl: https://github.com/tobozo/ESP32-targz
 siteUrl: https://github.com/tobozo/ESP32-targz
 star: 140
-version: v1.2.9
-lastUpdated: '2025-08-17'
+version: v1.3.0
+lastUpdated: '2026-01-22'
 components:
 - FileSystem
 - Storage
@@ -25,7 +25,7 @@ platforms:
 - ARM Cortex-M
 libraryType: Middleware
 createdAt: '2025-12-27'
-updatedAt: '2025-12-27'
+updatedAt: '2026-01-23'
 ---
 
 ### Features

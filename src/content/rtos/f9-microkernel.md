@@ -5,7 +5,7 @@ version: ''
 codeUrl: https://github.com/f9micro/f9-kernel
 siteUrl: https://github.com/f9micro/f9-kernel
 date: '2016-11-30'
-lastUpdated: '2020-01-01'
+lastUpdated: '2026-01-22'
 star: 708
 components: []
 libraries: []
@@ -18,7 +18,7 @@ summary: F9 microkernel is a microkernel-based (L4-style) kernel to support runn
   ARM Cortex-M series microprocessors with efficiency (performance + power consumption)
   and security (memory protection + isolated execution) in mind.
 createdAt: '2020-01-01'
-updatedAt: '2026-01-05'
+updatedAt: '2026-01-23'
 ---
 
 ### Features

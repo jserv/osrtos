@@ -8,14 +8,14 @@ summary: PlatformIO Core is a cross-platform, multi-architecture build system an
 slug: platformio-platformio-core
 codeUrl: https://github.com/platformio/platformio-core
 siteUrl: https://platformio.org
-star: 8830
+star: 8832
 version: v6.1.18
 lastUpdated: '2026-01-15'
 licenses:
 - Apache-2.0
 libraryType: Middleware
 createdAt: '2026-01-04'
-updatedAt: '2026-01-22'
+updatedAt: '2026-01-23'
 ---
 
 ### Features
