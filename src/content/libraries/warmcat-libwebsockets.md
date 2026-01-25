@@ -10,12 +10,12 @@ codeUrl: https://github.com/warmcat/libwebsockets
 siteUrl: https://libwebsockets.org
 star: 5176
 version: valgrind-clean
-lastUpdated: '2026-01-17'
+lastUpdated: '2026-01-23'
 licenses:
 - MIT
 libraryType: Network
 createdAt: '2025-12-30'
-updatedAt: '2026-01-23'
+updatedAt: '2026-01-25'
 ---
 
 ### Features
