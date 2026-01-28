@@ -8,7 +8,7 @@ summary: MuditaOS is an open-source mobile operating system built on FreeRTOS, s
 slug: mudita-muditaos
 codeUrl: https://github.com/mudita/MuditaOS
 siteUrl: https://store.mudita.com/
-star: 895
+star: 894
 version: verkotan-v1.0
 lastUpdated: '2025-09-24'
 components:
@@ -52,7 +52,7 @@ libraries:
 - libical
 - minimp3
 createdAt: '2025-12-31'
-updatedAt: '2026-01-20'
+updatedAt: '2026-01-28'
 ---
 
 ### Features
