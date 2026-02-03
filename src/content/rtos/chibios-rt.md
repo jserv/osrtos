@@ -10,7 +10,7 @@ codeUrl: https://github.com/ChibiOS/ChibiOS
 siteUrl: http://www.chibios.org/dokuwiki/doku.php
 star: 823
 version: ver21.11.4
-lastUpdated: '2026-01-27'
+lastUpdated: '2026-02-02'
 components:
 - FileSystem
 - Shell
@@ -35,7 +35,7 @@ libraries:
 - CMSIS
 - NASA OSAL
 createdAt: '2025-12-22'
-updatedAt: '2026-01-28'
+updatedAt: '2026-02-03'
 ---
 
 ### Features

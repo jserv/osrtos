@@ -10,7 +10,7 @@ codeUrl: https://github.com/modm-io/modm
 siteUrl: https://modm.io/
 star: 930
 version: 2025q4
-lastUpdated: '2026-01-26'
+lastUpdated: '2026-01-29'
 components:
 - Network
 - FileSystem
@@ -36,7 +36,7 @@ licenses:
 - MPL-2.0
 libraryType: HAL
 createdAt: '2025-12-23'
-updatedAt: '2026-01-28'
+updatedAt: '2026-02-03'
 ---
 
 ### Features
