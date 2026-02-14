@@ -5,7 +5,7 @@ version: pre_sterly_refactor
 codeUrl: https://github.com/apache/mynewt-core
 siteUrl: https://mynewt.apache.org/
 date: '2016-11-29'
-lastUpdated: '2026-01-20'
+lastUpdated: '2026-02-11'
 star: 877
 components:
 - BLE
@@ -26,7 +26,7 @@ summary: Apache Mynewt OS is a real-time, modular operating system for connected
   constraints. It provides a complete environment for prototyping, developing, and
   managing em
 createdAt: '2025-12-19'
-updatedAt: '2026-02-03'
+updatedAt: '2026-02-14'
 ---
 
 ### Features
