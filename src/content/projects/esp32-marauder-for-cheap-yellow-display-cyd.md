@@ -37,7 +37,7 @@ topics:
 - sunton
 - xpt2046
 isShow: true
-image: /202602/esp32-marauder.webp
+image: /202602/SX466.webp
 createdAt: '2026-02-19'
 updatedAt: '2026-02-19'
 ---
